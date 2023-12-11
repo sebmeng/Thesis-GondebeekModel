@@ -12,7 +12,7 @@ from shapely.geometry import Polygon, Point, LineString
 pd.options.mode.chained_assignment = None  # default='warn'
 
 
-def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,base_layer=None,skiprows=None):
+def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,skiprows=None):
     """interpolate asc data to a model grid using natural neighbor
 
     Args:
@@ -21,7 +21,6 @@ def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,base_layer=None,sk
         ncols ('int'): model number of rows
         delr ('float'): model delta row
         delc ('float'): model delta column
-        base_layer ('float'): optional layer that defines the base of the model
         skiprows('int'): number of rows to skip in file
 
     Return:
@@ -38,10 +37,7 @@ def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,base_layer=None,sk
             model_xy[inode,1]=yul-delr*(irow+1/2)
             inode=inode+1
 
-    interp_array = np.zeros((len(file_list)+1,nrow, ncol), dtype=np.float32)
-
-    if base_layer != None:
-        interp_array[len(file_list),:,:]=base_layer
+    interp_array = np.zeros((len(file_list),nrow, ncol), dtype=np.float32)
 
     for i,ifile in enumerate(file_list):
 
@@ -106,7 +102,7 @@ def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,base_layer=None,sk
         for irow in range(nrow):
             for icol in range(ncol):
                 if i>0:
-                    if inter_data[inode] <=0:
+                    if inter_data[inode] <=g_nodata_value:
                         interp_array[i,irow,icol]=interp_array[i-1,irow,icol]-1
                     else:
                         interp_array[i,irow,icol]=inter_data[inode]
@@ -352,6 +348,9 @@ def fill_botm_array(botm,elev_array,gls_lays):
     nrow = botm.shape[1]
     ncol = botm.shape[2]
 
+    if len(gls_lays) != len(elev_array) - 1:
+        raise ValueError("gls_lays should have a length of len(elev_array) - 1")
+    
     for irow in range(nrow):
         for icol in range(ncol):
             ibot = elev_array[0,irow,icol]
