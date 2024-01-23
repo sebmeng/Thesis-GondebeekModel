@@ -4,4 +4,9 @@ LIST               2  Gondebeek.list
 DIS               11  Gondebeek.dis
 LPF               15  Gondebeek.lpf
 BAS6              13  Gondebeek.bas
+RCH               19  Gondebeek.rch
+STR              118  Gondebeek.str
+OC                14  Gondebeek.oc
 DATA(BINARY)      50  Gondebeek.cbc REPLACE
+DATA(BINARY)      53  Gondebeek.STR.cbc REPLACE
+DATA(BINARY)      51  Gondebeek.hds REPLACE

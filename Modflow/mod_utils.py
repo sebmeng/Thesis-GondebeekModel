@@ -9,7 +9,91 @@ import datetime
 from flopy.utils.gridintersect import GridIntersect
 from flopy.utils import Raster
 from shapely.geometry import Polygon, Point, LineString
+import rasterio
+from rasterio.features import rasterize
+import geopandas as gpd
 pd.options.mode.chained_assignment = None  # default='warn'
+
+
+
+def set_hydraulic_properties(sim, gdf, s, bbox, delr, delc, hk_attributes, vk_attributes, sy_attributes, ss_attributes):
+    # Define the spatial resolution of your MODFLOW grid
+    xres = delr
+    yres = delc
+
+    # Define the bounds of your MODFLOW grid
+    xmin = int((bbox[0])//100*100)
+    ymin = int((bbox[1])//100*100+100)
+    xmax = int((bbox[2])//100*100)
+    ymax = int((bbox[3])//100*100+100)
+
+    # Create an empty raster dataset with the same spatial resolution and bounds as your MODFLOW grid
+    transform = rasterio.transform.from_origin(xmin, ymax, xres, yres)
+    out_shape = (int((ymax-ymin)/yres), int((xmax-xmin)/xres))
+
+    # Loop over each layer
+    for i in range(len(hk_attributes)):
+        # Check if there are any non-zero values in the shapefile for this attribute
+        if any(gdf[hk_attributes[i]] != 0):
+            # Rasterize the horizontal hydraulic conductivity attribute of the shapefile for this layer
+            hk_raster = rasterize(
+                ((geom,value) for geom, value in zip(gdf.geometry, gdf[hk_attributes[i]]) if value != 0),
+                out_shape=out_shape,
+                transform=transform,
+                fill=1,  # use 1 as the fill value
+                default_value=1,
+                dtype='float64'
+            )
+        else:
+            # If all values are 0, create a raster filled with the default value
+            hk_raster = np.full(out_shape, 1, dtype='float64')
+
+        # Set the horizontal hydraulic conductivity in this layer of the MODFLOW model
+        sim.lpf.hk[i] = hk_raster
+
+        # Repeat similar steps for 'vka', 'sy', and 'ss'
+        if any(gdf[vk_attributes[i]] != 0):
+            vk_raster = rasterize(
+                ((geom,value) for geom, value in zip(gdf.geometry, gdf[vk_attributes[i]]) if value != 0),
+                out_shape=out_shape,
+                transform=transform,
+                fill=1,
+                default_value=0.1,
+                dtype='float64'
+            )
+        else:
+            vk_raster = np.full(out_shape, 0.1, dtype='float64')
+
+        sim.lpf.vka[i] = vk_raster
+
+        if any(s[sy_attributes[i]] != 0):
+            sy_raster = rasterize(
+                ((geom,value) for geom, value in zip(s.geometry, s[sy_attributes[i]]) if value != 0),
+                out_shape=out_shape,
+                transform=transform,
+                fill=1,
+                default_value=0.05,
+                dtype='float64'
+            )
+        else:
+            sy_raster = np.full(out_shape, 0.05, dtype='float64')
+
+        sim.lpf.sy[i] = sy_raster
+
+        if any(s[ss_attributes[i]] != 0):
+            ss_raster = rasterize(
+                ((geom,value) for geom, value in zip(s.geometry, s[ss_attributes[i]]) if value != 0),
+                out_shape=out_shape,
+                transform=transform,
+                fill=1,
+                default_value=0.001,
+                dtype='float64'
+            )
+        else:
+            ss_raster = np.full(out_shape, 0.001, dtype='float64')
+
+        sim.lpf.ss[i] = ss_raster
+
 
 
 def interpolate_to_grid(file_list,xul,yul,nrow,ncol,delr,delc,skiprows=None):
