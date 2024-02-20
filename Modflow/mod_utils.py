@@ -92,6 +92,10 @@ def set_hydraulic_properties(sim, gdf, s, bbox, delr, delc, hk_attributes, vk_at
         else:
             ss_raster = np.full(out_shape, 0.001, dtype='float64')
 
+        # Check if any values in the raster exceed the threshold
+        ss_raster = np.where(ss_raster > 0.009, 0.009, ss_raster)
+
+        # Set the specific storage in this layer of the MODFLOW model
         sim.lpf.ss[i] = ss_raster
 
 
@@ -392,7 +396,7 @@ def geology_to_model(sim,geol_units_df):
 
 
 
-def check_layer_elevs(elev_array,threshold=None):
+def check_layer_elevs(elev_array, threshold=None):
     """Check overlaping elevations between layers from a 3D array (nlay,nrow,ncol)
 
     Args:
@@ -409,12 +413,12 @@ def check_layer_elevs(elev_array,threshold=None):
     nrow = elev_array.shape[1]
     ncol = elev_array.shape[2]
 
-    for i in range(1,nlay):
+    for i in range(1, nlay):
         for irow in range(nrow):
             for icol in range(ncol):
-                diff = elev_array[i-1,irow,icol]-elev_array[i,irow,icol]
-                if diff <=0:
-                    elev_array[i,irow,icol]=elev_array[i-1,irow,icol]-threshold
+                diff = elev_array[i-1, irow, icol] - elev_array[i, irow, icol]
+                if diff < threshold:
+                    elev_array[i, irow, icol] = elev_array[i-1, irow, icol] - threshold - 0.00001  # Add a small buffer
 
     return elev_array
 
