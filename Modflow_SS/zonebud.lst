@@ -34,9 +34,10 @@
 Reading budget file to determine number of terms per time step.
     1.00000              STO-SS                 
     1.00000        FLOW-JA-FACE                 
+    1.00000                 DRN DRN             
     1.00000                 RIV RIV             
     1.00000                RCHA RCHA_0          
-Detected 4 unique flow terms in budget file.
+Detected 5 unique flow terms in budget file.
 
 Processing Binary Grid File
   Detected regular MODFLOW grid (DIS)
@@ -3148,6 +3149,7 @@ End processing zone griddata
 Reading records from budget file
     1.00000              STO-SS                 
     1.00000        FLOW-JA-FACE                 
+    1.00000                 DRN DRN             
     1.00000                 RIV RIV             
     1.00000                RCHA RCHA_0          
 Done reading records from budget file
@@ -3162,22 +3164,24 @@ Done reading records from budget file
            IN:                                      IN:
            ---                                      ---
               STO-SS =           0.0000                STO-SS =           0.0000                                      
-                 RIV =        2541.7872                   RIV =        2541.7872     RIV                              
+                 DRN =           0.0000                   DRN =           0.0000     DRN                              
+                 RIV =        8498.6523                   RIV =        8498.6523     RIV                              
                 RCHA =       28844.8936                  RCHA =       28844.8936     RCHA_0                           
 
-            TOTAL IN =       31386.6808              TOTAL IN =       31386.6808
+            TOTAL IN =       37343.5460              TOTAL IN =       37343.5460
 
           OUT:                                     OUT:
           ----                                     ----
               STO-SS =           0.0000                STO-SS =           0.0000                                      
-                 RIV =       31387.7984                   RIV =       31387.7984     RIV                              
+                 DRN =       29392.1568                   DRN =       29392.1568     DRN                              
+                 RIV =        7951.3352                   RIV =        7951.3352     RIV                              
                 RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
 
-           TOTAL OUT =       31387.7984             TOTAL OUT =       31387.7984
+           TOTAL OUT =       37343.4921             TOTAL OUT =       37343.4921
 
-            IN - OUT =          -1.1176              IN - OUT =          -1.1176
+            IN - OUT =       5.3888E-02              IN - OUT =       5.3888E-02
 
- PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
 
 Reading records from budget file

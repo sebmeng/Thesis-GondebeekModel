@@ -1,5 +1,9 @@
 /Inputs/
 /Documents/
+/Modflow_SS_agent1/
+/Modflow_SS_agent2/
+/Modflow_SS_it1/
+/Modflow_SS_PESTini_it2/
 *.hds
 *.cbc
 *.str
