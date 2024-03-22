@@ -3162,22 +3162,22 @@ Done reading records from budget file
            IN:                                      IN:
            ---                                      ---
               STO-SS =           0.0000                STO-SS =           0.0000                                      
-                 RIV =        2541.7872                   RIV =        2541.7872     RIV                              
+                 RIV =       22175.7330                   RIV =       22175.7330     RIV                              
                 RCHA =       28844.8936                  RCHA =       28844.8936     RCHA_0                           
 
-            TOTAL IN =       31386.6808              TOTAL IN =       31386.6808
+            TOTAL IN =       51020.6266              TOTAL IN =       51020.6266
 
           OUT:                                     OUT:
           ----                                     ----
               STO-SS =           0.0000                STO-SS =           0.0000                                      
-                 RIV =       31387.7984                   RIV =       31387.7984     RIV                              
+                 RIV =       51020.4586                   RIV =       51020.4586     RIV                              
                 RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
 
-           TOTAL OUT =       31387.7984             TOTAL OUT =       31387.7984
+           TOTAL OUT =       51020.4586             TOTAL OUT =       51020.4586
 
-            IN - OUT =          -1.1176              IN - OUT =          -1.1176
+            IN - OUT =           0.1680              IN - OUT =           0.1680
 
- PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
 
 Reading records from budget file

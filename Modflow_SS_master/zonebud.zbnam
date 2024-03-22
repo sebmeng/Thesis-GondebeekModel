@@ -1,5 +1,5 @@
 BEGIN ZONEBUDGET
   ZON   zonebud.zon
-  BUD   Gondebeek_SS.cbc
-  GRB   Gondebeek_SS.dis.grb
+  BUD   ..\Modflow_SS_master\Gondebeek_SS.cbc
+  GRB   ..\Modflow_SS_master\Gondebeek_SS.dis.grb
 END ZONEBUDGET

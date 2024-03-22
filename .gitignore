@@ -2,8 +2,10 @@
 /Documents/
 /Modflow_SS_agent1/
 /Modflow_SS_agent2/
-/Modflow_SS_it1/
 /Modflow_SS_PESTini_it2/
+/Modflow_SS_PESTini_it3/
+Clonador_ejecutador_revB.bat
+*.exe
 *.hds
 *.cbc
 *.str
