@@ -1,0 +1,500 @@
+              PEST RUN RECORD: CASE gondebeek_ss_drn_reg_it9
+
+
+ PEST_HP version: 17.1
+
+
+ PEST run mode:-
+
+    Regularisation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :    18
+    Number of adjustable parameters                :    18
+    Number of parameter groups                     :     3
+    Number of observations                         :    31
+    Number of prior estimates                      :    18
+    Number of observation/prior_info groups        :     4
+
+
+ Model command line(s):-
+ 
+    run_model.bat
+
+
+ Model interface files:-
+
+    Templates:
+       zones_layer1.tpl
+       zones_layer2.tpl
+       zones_layer3.tpl
+       zones_layer4.tpl
+       riv.tpl
+       drn.tpl
+    for model input files:
+       Gondebeek_SS.npf_k_layer1.txt
+       Gondebeek_SS.npf_k_layer2.txt
+       Gondebeek_SS.npf_k_layer3.txt
+       Gondebeek_SS.npf_k_layer4.txt
+       Gondebeek_SS.riv_stress_period_data_1.txt
+       Gondebeek_SS.drn_stress_period_data_1.txt
+
+    (Parameter values written using single precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       simulated.ins
+    for reading model output files:
+       simulated.smp
+
+
+ Singular value decomposition:-
+
+    Perform SVD on XtQX or Q^(1/2)X               : XtQX
+    Max. number of singular values to employ      : 18
+    Ratio of lowest/highest singular value        :  5.000000E-07
+    Record eigenvectors in SVD file               : no
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ c            relative    1.0000E-02   none         switch       2.000     parabolic
+ c2           relative    1.0000E-02   none         switch       2.000     parabolic
+ k            relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ k1           none              relative    1.16119       1.000000E-03    700.000    
+ k2           none              relative   1.000000E-03   1.000000E-03    700.000    
+ k3           none              relative    7.23428       1.000000E-03    700.000    
+ k4           none              relative    8.63841       1.000000E-03    700.000    
+ k5           none              relative    48.4307       1.000000E-03    700.000    
+ k6           none              relative    1.56135       1.000000E-03    700.000    
+ k7           none              relative   1.000000E-03   1.000000E-03    700.000    
+ k8           none              relative    21.2907       1.000000E-03    700.000    
+ k9           none              relative    1.32708       1.000000E-03    700.000    
+ k10          none              relative    1.33100       1.000000E-03    700.000    
+ k11          none              relative   1.000000E-03   1.000000E-03    700.000    
+ k12          none              relative   1.000000E-03   1.000000E-03    700.000    
+ k13          none              relative    47.1872       1.000000E-03    700.000    
+ k14          none              relative    1.30463       1.000000E-03    700.000    
+ k15          none              relative   1.000000E-03   1.000000E-03    700.000    
+ k16          none              relative   1.000000E-03   1.000000E-03    700.000    
+ c            none              relative    38.4664       1.000000E-05    1000.00    
+ c2           none              relative    55.2208       1.000000E-05    1000.00    
+
+ Name         Group          Scale         Offset        Model command number
+ k1           k             1.00000        0.00000            1
+ k2           k             1.00000        0.00000            1
+ k3           k             1.00000        0.00000            1
+ k4           k             1.00000        0.00000            1
+ k5           k             1.00000        0.00000            1
+ k6           k             1.00000        0.00000            1
+ k7           k             1.00000        0.00000            1
+ k8           k             1.00000        0.00000            1
+ k9           k             1.00000        0.00000            1
+ k10          k             1.00000        0.00000            1
+ k11          k             1.00000        0.00000            1
+ k12          k             1.00000        0.00000            1
+ k13          k             1.00000        0.00000            1
+ k14          k             1.00000        0.00000            1
+ k15          k             1.00000        0.00000            1
+ k16          k             1.00000        0.00000            1
+ c            c             1.00000        0.00000            1
+ c2           c2            1.00000        0.00000            1
+
+
+ Prior information:-
+
+ Prior info               Factor             Parameter              Prior         Weight
+ name                                                               information
+                   k1      1.00000       *       k1            =     1.00000       1.000
+                   k2      1.00000       *       k2            =     1.00000       1.000
+                   k3      1.00000       *       k3            =     1.00000       1.000
+                   k4      1.00000       *       k4            =     5.00000       1.000
+                   k5      1.00000       *       k5            =     6.00000       1.000
+                   k6      1.00000       *       k6            =     1.00000       1.000
+                   k7      1.00000       *       k7            =     1.50000       1.000
+                   k8      1.00000       *       k8            =     6.00000       1.000
+                   k9      1.00000       *       k9            =    0.100000       1.000
+                  k10      1.00000       *       k10           =     1.00000       1.000
+                  k11      1.00000       *       k11           =     1.50000       1.000
+                  k12      1.00000       *       k12           =     2.70000       1.000
+                  k13      1.00000       *       k13           =    0.100000       1.000
+                  k14      1.00000       *       k14           =     1.00000       1.000
+                  k15      1.00000       *       k15           =     1.50000       1.000
+                  k16      1.00000       *       k16           =     2.70000       1.000
+                    c      1.00000       *       c             =     40.0000       1.000
+                   c2      1.00000       *       c2            =     10.0000       1.000
+
+ Prior Info Name           Observation Group
+ k1                           regul_k
+ k2                           regul_k
+ k3                           regul_k
+ k4                           regul_k
+ k5                           regul_k
+ k6                           regul_k
+ k7                           regul_k
+ k8                           regul_k
+ k9                           regul_k
+ k10                          regul_k
+ k11                          regul_k
+ k12                          regul_k
+ k13                          regul_k
+ k14                          regul_k
+ k15                          regul_k
+ k16                          regul_k
+ c                            regul_c
+ c2                           regul_c2
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  prefixaelm_1_1          26.5700          1.000       head        
+  prefixaelm_2_1          26.2900          1.000       head        
+  prefixaelm_3_1          26.7200          1.000       head        
+  prefixmel_1_1           16.4200          1.000       head        
+  prefixmel_2_1           18.9100          1.000       head        
+  prefixmel_3_1           17.4000          1.000       head        
+  prefixmel_4_1           16.4300          1.000       head        
+  prefixmer_5_1           21.7000          1.000       head        
+  prefixmer_7_1           31.6800          1.000       head        
+  prefixmoort_1_1         19.8600          1.000       head        
+  prefixmoort_2_1         19.8700          1.000       head        
+  prefixmoort_3_1         20.7100          1.000       head        
+  prefixmoort_4_1         20.9600          1.000       head        
+  prefixmoort_5_1         21.0900          1.000       head        
+  prefixmoort_6_1         20.4900          1.000       head        
+  prefixmoort_7_1         20.7000          1.000       head        
+  prefixmoort_8_1         19.2800          1.000       head        
+  prefixntp_1_1           12.3700          10.00       head        
+  prefixntp_2_1           12.1400          10.00       head        
+  prefixntp_3_1           12.5400          10.00       head        
+  prefixntp_4_1           12.1000          10.00       head        
+  prefixntp_5_1           12.6200          10.00       head        
+  prefixntp_6_1           12.2700          10.00       head        
+  prefixoost_1_1          25.8200          1.000       head        
+  prefixoost_16_1         13.3300          1.000       head        
+  prefixoost_17_1         13.1700          1.000       head        
+  prefixoost_2_1          42.8100          1.000       head        
+  prefixoost_3_1          43.2400          1.000       head        
+  prefixoost_4_1          55.6700          1.000       head        
+  prefixoost_5_1          51.8100          1.000       head        
+  prefixoost_9_1          41.3200          1.000       head        
+
+
+ Control settings:-
+
+    Forgive model run failure during lamda testing               : yes
+    Forgive model run failure during Jacobian runs               : yes
+
+    Perform Broyden's update of Jacobian matrix                  : yes
+    Maximum number of updates per iteration                      : 20
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   : na
+    Maximum relative parameter change (relative-limited changes) :  10.000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+    (However PEST_HP will not switch in 1st or 2nd iteration if 
+    any parameter upgrades are fac/rel/abs-change-limited.)
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.50000E-02
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :   0
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options:-
+
+    Save run results file                                        : no
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+ Extra settings for regularisation mode:-
+
+    Target/current measurement objective function ratio          : 0.10000    
+    Acceptable/target measurement objective function ratio       :  1.0500    
+    Minimum target measurement objective function value          : 1.00000E-10
+    Terminate inversion when measurement obj. fn. below target   : yes
+
+    Initial regularisation weight factor                         :  1.0000    
+    Minimum regularisation weight factor                         : 1.00000E-10
+    Maximum regularisation weight factor                         : 1.00000E+10
+
+    Weight factor solution adjustment ratio                      :  1.3000    
+    Weight factor solution tolerance                             : 1.00000E-02
+    Automatic inter-regularisation group weights adjustment      : yes
+    Use sensitivities or number of items                         : sensitivities
+
+    Implement memory conservation                                : no
+    Declare all regularisation information as linear             : no
+
+
+ Extra settings for PEST_HP:-
+
+    Lower limit on number of simultaneous parameter upgrade tests [UPTESTMIN]         : not set
+    Upper limit on number of simultaneous parameter upgrade tests [UPTESTLIM]         : not set
+    Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+    Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+    Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+    PEST_HP time-out termination criterion [HARDSTOPHOURS or SOFTSTOPHOURS]           : none
+    Warning threshold for high sensitivities [JCOWARNTHRESH]                          : 1.00000E+30
+    Zeroing threshold for high sensitivities [JCOZEROTHRESH]                          : not set
+    Number of distribution files                                                      : 0
+ 
+ 
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Current regularisation weight factor                     =   1.0000    
+    Current value of measurement objective function          =   545.33    
+    Current value of regularisation objective function       =   6375.1    
+ 
+    Sum of squared weighted residuals (ie phi)               =   6920.4    
+    Contribution to phi from observation group "head"        =   545.33    
+    Contribution to phi from observation group "regul_c"     =   2.3519    
+    Contribution to phi from observation group "regul_c2"    =   2044.9    
+    Contribution to phi from observation group "regul_k"     =   4327.8    
+ 
+       Current parameter values
+       k1               1.16119    
+       k2              1.000000E-03
+       k3               7.23428    
+       k4               8.63841    
+       k5               48.4307    
+       k6               1.56135    
+       k7              1.000000E-03
+       k8               21.2907    
+       k9               1.32708    
+       k10              1.33100    
+       k11             1.000000E-03
+       k12             1.000000E-03
+       k13              47.1872    
+       k14              1.30463    
+       k15             1.000000E-03
+       k16             1.000000E-03
+       c                38.4664    
+       c2               55.2208    
+
+    Optimisation complete: optimisation iteration limit of 0 realized.
+    Total model calls:      1
+
+
+                             OPTIMISATION RESULTS
+
+ PEST_HP does not record parameter confidence intervals.
+ Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+ Use other PEST linear analysis utilities to explore parameter uncertainties and identifiabilities.
+
+
+ Parameters ----->
+
+ Parameter      Estimated value
+  k1              1.16119    
+  k2             1.000000E-03
+  k3              7.23428    
+  k4              8.63841    
+  k5              48.4307    
+  k6              1.56135    
+  k7             1.000000E-03
+  k8              21.2907    
+  k9              1.32708    
+  k10             1.33100    
+  k11            1.000000E-03
+  k12            1.000000E-03
+  k13             47.1872    
+  k14             1.30463    
+  k15            1.000000E-03
+  k16            1.000000E-03
+  c               38.4664    
+  c2              55.2208    
+
+ See file gondebeek_ss_drn_reg_it9.sen for parameter sensitivities.
+ Note that these sensitivities include effects of regularisation observations.
+
+
+ Regularisation Weight Factor ----->
+
+ Optimised regularisation weight factor =  1.0000    
+
+ Pertinent observation and prior information weights shown below are 
+ calculated using  this weight factor.
+
+ Note that the target measurement objective function was not achieved.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ prefixaelm_1_1         26.5700        23.7795        2.79052        1.000      head        
+ prefixaelm_2_1         26.2900        23.6846        2.60544        1.000      head        
+ prefixaelm_3_1         26.7200        23.9626        2.75737        1.000      head        
+ prefixmel_1_1          16.4200        18.1674       -1.74739        1.000      head        
+ prefixmel_2_1          18.9100        18.6125       0.297470        1.000      head        
+ prefixmel_3_1          17.4000        18.4219       -1.02192        1.000      head        
+ prefixmel_4_1          16.4300        19.1724       -2.74238        1.000      head        
+ prefixmer_5_1          21.7000        20.3213        1.37866        1.000      head        
+ prefixmer_7_1          31.6800        31.5763       0.103651        1.000      head        
+ prefixmoort_1_1        19.8600        22.6437       -2.78374        1.000      head        
+ prefixmoort_2_1        19.8700        21.8215       -1.95148        1.000      head        
+ prefixmoort_3_1        20.7100        21.8279       -1.11785        1.000      head        
+ prefixmoort_4_1        20.9600        22.2281       -1.26812        1.000      head        
+ prefixmoort_5_1        21.0900        22.2281       -1.13812        1.000      head        
+ prefixmoort_6_1        20.4900        22.9313       -2.44134        1.000      head        
+ prefixmoort_7_1        20.7000        21.9694       -1.26944        1.000      head        
+ prefixmoort_8_1        19.2800        22.1540       -2.87399        1.000      head        
+ prefixntp_1_1          12.3700        13.2601      -0.890117        10.00      head        
+ prefixntp_2_1          12.1400        12.5557      -0.415736        10.00      head        
+ prefixntp_3_1          12.5400        13.4190      -0.879041        10.00      head        
+ prefixntp_4_1          12.1000        12.8694      -0.769398        10.00      head        
+ prefixntp_5_1          12.6200        13.8656       -1.24561        10.00      head        
+ prefixntp_6_1          12.2700        13.1137      -0.843725        10.00      head        
+ prefixoost_1_1         25.8200        26.1579      -0.337882        1.000      head        
+ prefixoost_16_1        13.3300        12.9096       0.420423        1.000      head        
+ prefixoost_17_1        13.1700        12.6916       0.478371        1.000      head        
+ prefixoost_2_1         42.8100        42.7963       1.371000E-02    1.000      head        
+ prefixoost_3_1         43.2400        45.5528       -2.31276        1.000      head        
+ prefixoost_4_1         55.6700        56.7301       -1.06006        1.000      head        
+ prefixoost_5_1         51.8100        48.6777        3.13225        1.000      head        
+ prefixoost_9_1         41.3200        39.9557        1.36427        1.000      head        
+
+
+ Prior information ----->
+
+ Prior                  Provided       Calculated     Residual       Weight     Group
+ information            value          value
+ k1                     1.00000        1.16119      -0.161194        1.000      regul_k     
+ k2                     1.00000       1.000000E-03   0.999000        1.000      regul_k     
+ k3                     1.00000        7.23428       -6.23428        1.000      regul_k     
+ k4                     5.00000        8.63841       -3.63841        1.000      regul_k     
+ k5                     6.00000        48.4307       -42.4307        1.000      regul_k     
+ k6                     1.00000        1.56135      -0.561352        1.000      regul_k     
+ k7                     1.50000       1.000000E-03    1.49900        1.000      regul_k     
+ k8                     6.00000        21.2907       -15.2907        1.000      regul_k     
+ k9                    0.100000        1.32708       -1.22707        1.000      regul_k     
+ k10                    1.00000        1.33100      -0.331000        1.000      regul_k     
+ k11                    1.50000       1.000000E-03    1.49900        1.000      regul_k     
+ k12                    2.70000       1.000000E-03    2.69900        1.000      regul_k     
+ k13                   0.100000        47.1872       -47.0872        1.000      regul_k     
+ k14                    1.00000        1.30463      -0.304629        1.000      regul_k     
+ k15                    1.50000       1.000000E-03    1.49900        1.000      regul_k     
+ k16                    2.70000       1.000000E-03    2.69900        1.000      regul_k     
+ c                      40.0000        38.4664        1.53360        1.000      regul_c     
+ c2                     10.0000        55.2208       -45.2208        1.000      regul_c2    
+
+ See file gondebeek_ss_drn_reg_it9.res for more details of residuals in graph-ready format.
+
+ See file gondebeek_ss_drn_reg_it9.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =   6920.4    
+   Contribution to phi from observation group "head"         =   545.33    
+   Contribution to phi from observation group "regul_c"      =   2.3519    
+   Contribution to phi from observation group "regul_c2"     =   2044.9    
+   Contribution to phi from observation group "regul_k"      =   4327.8    
+
+   Optimised measurement objective function                  =   545.33    
+   Optimised regularisation weight factor                    =   1.0000    
+   Optimised regularisation objective function               =   6375.1    
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   =  0.99860    
+   (Includes measurement observations only.)
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =    49
+      Mean value of non-zero weighted residuals                      =  -4.270    
+      Maximum weighted residual [observation "prefixoost_5_1"]       =   3.132    
+      Minimum weighted residual [observation "k13"]                  =  -47.09    
+      Standard variance of weighted residuals                        =   223.2    
+      Standard error of weighted residuals                           =   14.94    
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+   Residuals for observation group "head":-
+      Number of residuals with non-zero weight                       =    31
+      Mean value of non-zero weighted residuals                      =  -1.908    
+      Maximum weighted residual [observation "prefixoost_5_1"]       =   3.132    
+      Minimum weighted residual [observation "prefixntp_5_1"]        =  -12.46    
+      "Variance" of weighted residuals                               =   17.59    
+      "Standard error" of weighted residuals                         =   4.194    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_c":-
+      Number of residuals with non-zero weight                       =     1
+      Mean value of non-zero weighted residuals                      =   1.534    
+      Maximum weighted residual [observation "c"]                    =   1.534    
+      Minimum weighted residual [observation "c"]                    =   1.534    
+      "Variance" of weighted residuals                               =   2.352    
+      "Standard error" of weighted residuals                         =   1.534    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_c2":-
+      Number of residuals with non-zero weight                       =     1
+      Mean value of non-zero weighted residuals                      =  -45.22    
+      Maximum weighted residual [observation "c2"]                   =  -45.22    
+      Minimum weighted residual [observation "c2"]                   =  -45.22    
+      "Variance" of weighted residuals                               =   2045.    
+      "Standard error" of weighted residuals                         =   45.22    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_k":-
+      Number of residuals with non-zero weight                       =    16
+      Mean value of non-zero weighted residuals                      =  -6.648    
+      Maximum weighted residual [observation "k12"]                  =   2.699    
+      Minimum weighted residual [observation "k13"]                  =  -47.09    
+      "Variance" of weighted residuals                               =   270.5    
+      "Standard error" of weighted residuals                         =   16.45    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+
+ PEST_HP does not record parameter covariance and other matrices.
+ Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+ Use other PEST linear analysis utilities to explore parameter and predictive uncertainties.

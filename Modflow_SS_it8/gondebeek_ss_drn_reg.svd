@@ -1,0 +1,530 @@
+ RECORD OF SVD CALCULATIONS: CASE gondebeek_ss_drn_reg
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    1
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     402.     ----->
+
+ SINGULAR VALUES:-
+   30.21633       7.247109       2.509834       2.292195       2.027436       1.736774       1.336850    
+   1.312075       1.258490       1.243572       1.242586       1.242409       1.242149       1.242091    
+   1.242065       1.242025       1.242017       1.242013    
+
+ Number of singular values used in solution = 18
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   29.55246       6.583239       1.845964       1.628325       1.363566       1.072904      0.6729800    
+  0.6482046      0.5946204      0.5797017      0.5787165      0.5785392      0.5782791      0.5782206    
+  0.5781955      0.5781546      0.5781474      0.5781435    
+
+ Number of singular values used in solution = 18
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     865.     ----->
+
+ SINGULAR VALUES:-
+   31.64659       8.677373       3.940099       3.722459       3.457700       3.167038       2.767114    
+   2.742339       2.688755       2.673836       2.672851       2.672674       2.672413       2.672355    
+   2.672330       2.672289       2.672282       2.672278    
+
+ Number of singular values used in solution = 18
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     402.     ----->
+
+ SINGULAR VALUES:-
+   29.04321       7.139177       2.581534       2.294945       2.012252       1.731221       1.331857    
+   1.310412       1.258394       1.243549       1.242589       1.242383       1.242140       1.242083    
+   1.242053       1.242013       1.242006       1.242002    
+
+ Number of singular values used in solution = 18
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   28.37935       6.475313       1.917670       1.631081       1.348389       1.067357      0.6679935    
+  0.6465484      0.5945297      0.5796846      0.5787249      0.5785193      0.5782758      0.5782191    
+  0.5781887      0.5781489      0.5781421      0.5781383    
+
+ Number of singular values used in solution = 18
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     865.     ----->
+
+ SINGULAR VALUES:-
+   30.47346       8.569429       4.011785       3.725196       3.442504       3.161473       2.762109    
+   2.740664       2.688645       2.673800       2.672840       2.672635       2.672391       2.672335    
+   2.672304       2.672264       2.672258       2.672254    
+
+ Number of singular values used in solution = 18
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    2
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   77.16493       14.45143       4.520707       1.189294      0.9242606      0.6591307      0.4776667    
+  0.4219888      0.4118438      0.4019546      0.3941212      0.3927024      0.3922402      0.3920195    
+  0.3918979      0.3918210      0.3917814      0.3917807    
+
+ Number of singular values used in solution = 18
+ Param "k15" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   64.30635       6.263758       1.231754      0.9244136      0.7903772      0.4974782      0.4318306    
+  0.4135838      0.4095078      0.3961318      0.3929994      0.3922442      0.3920554      0.3918994    
+  0.3918450      0.3917815      0.3917807    
+
+ Number of singular values used in solution = 17
+ Param "k14" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   6.278238       1.491905       1.231740      0.9239636      0.7159899      0.4318382      0.4138444    
+  0.4113346      0.4038145      0.3935178      0.3923876      0.3920917      0.3919325      0.3918470    
+  0.3917815      0.3917807    
+
+ Number of singular values used in solution = 16
+ Param "k13" frozen: - update vector out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   6.278187       1.491860       1.231609      0.9239617      0.7159149      0.4223679      0.4119214    
+  0.4050050      0.3935398      0.3924007      0.3921049      0.3919325      0.3918562      0.3917833    
+  0.3917807    
+
+ Number of singular values used in solution = 15
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   6.047968       1.261642       1.001391      0.6937434      0.4856967      0.1921496      0.1817031    
+  0.1747867      0.1633215      0.1621824      0.1618867      0.1617142      0.1616379      0.1615650    
+  0.1615624    
+
+ Number of singular values used in solution = 15
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     456.     ----->
+
+ SINGULAR VALUES:-
+   6.840746       2.054420       1.794169       1.486521       1.278474      0.9849274      0.9744810    
+  0.9675645      0.9560993      0.9549602      0.9546645      0.9544920      0.9544157      0.9543428    
+  0.9543402    
+
+ Number of singular values used in solution = 15
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   77.17694       14.51990       4.581435       1.201293      0.9212779      0.6587709      0.4778551    
+  0.4211290      0.4117263      0.4016388      0.3941321      0.3927088      0.3922369      0.3920366    
+  0.3919083      0.3918372      0.3917874      0.3917868    
+
+ Number of singular values used in solution = 18
+ Param "k15" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   64.31219       6.402353       1.240604      0.9230899      0.7895075      0.4979609      0.4293291    
+  0.4135775      0.4091533      0.3961873      0.3930089      0.3922423      0.3920663      0.3919084    
+  0.3918676      0.3917875      0.3917868    
+
+ Number of singular values used in solution = 17
+ Param "k14" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     186.     ----->
+
+ SINGULAR VALUES:-
+   6.414315       1.500442       1.240157      0.9230898      0.7153606      0.4293316      0.4138215    
+  0.4110993      0.4038119      0.3935207      0.3923975      0.3920977      0.3919361      0.3918738    
+  0.3917875      0.3917868    
+
+ Number of singular values used in solution = 16
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   6.184093       1.270221       1.009935      0.6928679      0.4851387      0.1991097      0.1835996    
+  0.1808774      0.1735900      0.1632988      0.1621756      0.1618758      0.1617142      0.1616519    
+  0.1615656      0.1615649    
+
+ Number of singular values used in solution = 16
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     456.     ----->
+
+ SINGULAR VALUES:-
+   6.976884       2.063011       1.802725       1.485658       1.277929      0.9918999      0.9763899    
+  0.9736677      0.9663802      0.9560890      0.9549658      0.9546661      0.9545045      0.9544421    
+  0.9543559      0.9543552    
+
+ Number of singular values used in solution = 16
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    3
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   684.8876       84.54468       51.20356       51.20030       48.47206       21.79488       15.42901    
+   13.76172       12.71938       12.25315       12.20184       12.07623       12.01868       11.91155    
+   11.91089       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 18
+ Param "k7" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   450.1510       51.20161       51.20022       25.31074       14.47562       13.90151       13.34877    
+   12.33040       12.05265       11.99825       11.91165       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 14
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   51.21420       51.20033       26.32333       13.95899       13.67999       12.96101       12.06157    
+   11.99990       11.91165       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 12
+ Param "k13" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   51.21408       51.20033       26.32330       13.95673       13.67990       12.06279       12.00036    
+   11.91270       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     30.5     ----->
+
+ SINGULAR VALUES:-
+   44.16171       44.14796       19.27094       6.904369       6.627537       5.010430       4.947994    
+   4.860334       4.858398       4.858395       4.858395    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     191.     ----->
+
+ SINGULAR VALUES:-
+   68.83881       68.82506       43.94804       31.58147       31.30464       29.68753       29.62509    
+   29.53743       29.53550       29.53550       29.53550    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   684.8810       84.54210       51.20591       51.20111       48.46922       21.78469       15.41622    
+   13.76157       12.71664       12.25281       12.20195       12.07630       12.01873       11.91155    
+   11.91089       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 18
+ Param "k7" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   450.1446       51.20449       51.20097       25.29438       14.47576       13.89970       13.33515    
+   12.32983       12.05271       11.99837       11.91163       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 14
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   51.23738       51.20136       26.29044       13.95898       13.65353       12.96104       12.06173    
+   12.00002       11.91163       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 12
+ Param "k13" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     76.3     ----->
+
+ SINGULAR VALUES:-
+   51.23727       51.20134       26.29042       13.95673       13.65346       12.06297       12.00048    
+   11.91269       11.91076       11.91076       11.91076    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     30.5     ----->
+
+ SINGULAR VALUES:-
+   44.18491       44.14898       19.23806       6.904363       6.601091       5.010610       4.948120    
+   4.860322       4.858398       4.858396       4.858395    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     191.     ----->
+
+ SINGULAR VALUES:-
+   68.86201       68.82608       43.91516       31.58146       31.27819       29.68771       29.62522    
+   29.53742       29.53550       29.53550       29.53550    
+
+ Number of singular values used in solution = 11
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    4
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   713.5580       76.46258       43.02788       20.83849       20.83538       14.82930       6.675265    
+   5.874669       5.411547       5.101962       5.035408       4.878047       4.832907       4.766054    
+   4.765547       4.765045       4.765045       4.765045    
+
+ Number of singular values used in solution = 18
+ Param "k7" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k13" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   458.9243       20.83842       20.83588       18.36191       7.376577       6.770179       5.499979    
+   4.927542       4.854241       4.766308       4.765048       4.765045       4.765045    
+
+ Number of singular values used in solution = 13
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   20.91693       20.83628       20.54477       7.004199       5.726547       4.933197       4.856214    
+   4.767127       4.765048       4.765045       4.765045    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     30.2     ----->
+
+ SINGULAR VALUES:-
+   18.11763       18.03698       17.74547       4.204902       2.927250       2.133900       2.056917    
+   1.967830       1.965751       1.965748       1.965748    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     184.     ----->
+
+ SINGULAR VALUES:-
+   27.83456       27.75391       27.46240       13.92183       12.64418       11.85083       11.77384    
+   11.68476       11.68268       11.68267       11.68267    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   713.5546       76.45379       43.02805       20.84618       20.83607       14.79629       6.674670    
+   5.869492       5.409042       5.101284       5.034795       4.878055       4.832517       4.766180    
+   4.765464       4.765046       4.765046       4.765046    
+
+ Number of singular values used in solution = 18
+ Param "k7" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k13" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   458.9206       20.88463       20.83668       18.28118       7.376893       6.770249       5.489278    
+   4.928208       4.854746       4.766254       4.765049       4.765046       4.765046    
+
+ Number of singular values used in solution = 13
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     74.6     ----->
+
+ SINGULAR VALUES:-
+   21.38304       20.83827       20.04759       7.003752       5.707890       4.934302       4.856722    
+   4.767114       4.765049       4.765046       4.765046    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     30.2     ----->
+
+ SINGULAR VALUES:-
+   18.58374       18.03897       17.24829       4.204454       2.908593       2.135004       2.057425    
+   1.967817       1.965751       1.965748       1.965748    
+
+ Number of singular values used in solution = 11
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     184.     ----->
+
+ SINGULAR VALUES:-
+   28.30067       27.75590       26.96522       13.92138       12.62552       11.85193       11.77435    
+   11.68475       11.68268       11.68268       11.68268    
+
+ Number of singular values used in solution = 11
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    5
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   702.6344       107.0440       42.77440       6.238470       5.919566       5.914952       4.954389    
+   2.955115       1.254112      0.5372745      0.4999048      0.4121151      0.3035063      0.2939972    
+  0.2928074      0.2916634      0.2916634      0.2916634    
+
+ Number of singular values used in solution = 18
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   8.789818       7.083433       5.940134       5.918532       3.353441       3.017940      0.4858747    
+  0.3767685      0.2974465      0.2929248      0.2916634      0.2916634      0.2916634    
+
+ Number of singular values used in solution = 13
+ Param "k7" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   8.541918       7.063217       5.932503       5.918519       3.019418      0.4946756      0.3797888    
+  0.3027282      0.2931296      0.2916637      0.2916634      0.2916634    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     6.11     ----->
+
+ SINGULAR VALUES:-
+   8.407119       6.928418       5.797704       5.783720       2.884618      0.3598765      0.2449897    
+  0.1679291      0.1583305      0.1568646      0.1568643      0.1568643    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     24.4     ----->
+
+ SINGULAR VALUES:-
+   8.811516       7.332815       6.202102       6.188117       3.289016      0.7642738      0.6493870    
+  0.5723263      0.5627278      0.5612618      0.5612616      0.5612616    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   702.6200       107.0449       42.73194       6.320573       5.927594       5.918910       4.800332    
+   2.955814       1.248562      0.5381021      0.5000623      0.4123432      0.3033404      0.2939716    
+  0.2927997      0.2916639      0.2916639      0.2916639    
+
+ Number of singular values used in solution = 18
+ Param "k1" frozen: gradient and update vectors out of bounds
+ Param "k2" frozen: gradient and update vectors out of bounds
+ Param "k11" frozen: gradient and update vectors out of bounds
+ Param "k15" frozen: gradient and update vectors out of bounds
+ Param "k16" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   8.744093       7.088634       5.928913       5.853566       3.349148       3.019740      0.4854741    
+  0.3768192      0.2972343      0.2929258      0.2916640      0.2916639      0.2916639    
+
+ Number of singular values used in solution = 13
+ Param "k7" frozen: gradient and update vectors out of bounds
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     12.2     ----->
+
+ SINGULAR VALUES:-
+   8.509702       7.071790       5.923644       5.827870       3.021564      0.4951408      0.3804171    
+  0.3028629      0.2931424      0.2916643      0.2916639      0.2916639    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     6.11     ----->
+
+ SINGULAR VALUES:-
+   8.374903       6.936991       5.788845       5.693071       2.886765      0.3603415      0.2456178    
+  0.1680636      0.1583431      0.1568649      0.1568646      0.1568646    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     24.4     ----->
+
+ SINGULAR VALUES:-
+   8.779301       7.341389       6.193243       6.097469       3.291163      0.7647395      0.6500158    
+  0.5724616      0.5627411      0.5612629      0.5612626      0.5612626    
+
+ Number of singular values used in solution = 12

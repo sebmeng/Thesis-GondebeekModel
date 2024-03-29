@@ -13,9 +13,9 @@
  RUNNING MODEL FOR FIRST TIME  -----> 
 
  Running model 1 time....
-   15 Mar 16:49:34.27:- index of 1 assigned to agent working in directory "172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_master".
-   15 Mar 16:49:34.28:- model run 1 initiated using agent 1.
-   15 Mar 16:49:34.85:- model run 1 completed by agent 1.
+   26 Mar 12:51:24.37:- index of 1 assigned to agent working in directory "172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_it3".
+   26 Mar 12:51:24.37:- model run 1 initiated using agent 1.
+   26 Mar 12:51:24.78:- model run 1 completed by agent 1.
 
  STATISTICS
 

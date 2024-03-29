@@ -1,0 +1,380 @@
+             RUN MANAGEMENT RECORD: CASE gondebeek_ss_drn_reg
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+ Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+ Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   28 Mar 12:54:09.93:- index of 1 assigned to agent working in directory "172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent2".
+   28 Mar 12:54:09.94:- model run 1 initiated using agent 1.
+   28 Mar 12:54:10.59:- model run 1 completed by agent 1.
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+
+ Calculating Jacobian matrix: running model 18 times .....
+   28 Mar 12:54:10.68:- model run 1 initiated using agent 1.
+   28 Mar 12:54:11.29:- model run 1 completed by agent 1.
+   28 Mar 12:54:11.29:- model run 2 initiated using agent 1.
+   28 Mar 12:54:11.87:- model run 2 completed by agent 1.
+   28 Mar 12:54:11.87:- model run 3 initiated using agent 1.
+   28 Mar 12:54:12.46:- model run 3 completed by agent 1.
+   28 Mar 12:54:12.46:- model run 4 initiated using agent 1.
+   28 Mar 12:54:13.03:- model run 4 completed by agent 1.
+   28 Mar 12:54:13.03:- model run 5 initiated using agent 1.
+   28 Mar 12:54:13.84:- model run 5 completed by agent 1.
+   28 Mar 12:54:13.84:- model run 6 initiated using agent 1.
+   28 Mar 12:54:14.57:- model run 6 completed by agent 1.
+   28 Mar 12:54:14.57:- model run 7 initiated using agent 1.
+   28 Mar 12:54:15.24:- model run 7 completed by agent 1.
+   28 Mar 12:54:15.24:- model run 8 initiated using agent 1.
+   28 Mar 12:54:15.96:- model run 8 completed by agent 1.
+   28 Mar 12:54:15.96:- model run 9 initiated using agent 1.
+   28 Mar 12:54:16.42:- index of 2 assigned to agent working in directory "172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent1".
+   28 Mar 12:54:16.43:- model run 10 initiated using agent 2.
+   28 Mar 12:54:16.60:- model run 9 completed by agent 1.
+   28 Mar 12:54:16.60:- model run 11 initiated using agent 1.
+   28 Mar 12:54:17.03:- model run 10 completed by agent 2.
+   28 Mar 12:54:17.03:- model run 12 initiated using agent 2.
+   28 Mar 12:54:17.30:- model run 11 completed by agent 1.
+   28 Mar 12:54:17.30:- model run 13 initiated using agent 1.
+   28 Mar 12:54:17.80:- model run 12 completed by agent 2.
+   28 Mar 12:54:17.80:- model run 14 initiated using agent 2.
+   28 Mar 12:54:18.01:- model run 13 completed by agent 1.
+   28 Mar 12:54:18.01:- model run 15 initiated using agent 1.
+   28 Mar 12:54:18.50:- model run 14 completed by agent 2.
+   28 Mar 12:54:18.50:- model run 16 initiated using agent 2.
+   28 Mar 12:54:18.72:- model run 15 completed by agent 1.
+   28 Mar 12:54:18.72:- model run 17 initiated using agent 1.
+   28 Mar 12:54:19.08:- model run 16 completed by agent 2.
+   28 Mar 12:54:19.08:- model run 18 initiated using agent 2.
+   28 Mar 12:54:19.38:- model run 17 completed by agent 1.
+   28 Mar 12:54:19.64:- model run 18 completed by agent 2.
+
+ Testing parameter upgrades .....
+   28 Mar 12:54:19.67:- model run 1 initiated using agent 2.
+   28 Mar 12:54:19.67:- model run 2 initiated using agent 1.
+   28 Mar 12:54:20.28:- model run 1 completed by agent 2.
+   28 Mar 12:54:20.28:- model run 3 initiated using agent 2.
+   28 Mar 12:54:20.34:- model run 2 completed by agent 1.
+   28 Mar 12:54:20.85:- model run 3 completed by agent 2.
+
+ Testing parameter upgrades after Broyden Jacobian update .....
+   28 Mar 12:54:20.86:- model run 1 initiated using agent 2.
+   28 Mar 12:54:20.86:- model run 2 initiated using agent 1.
+   28 Mar 12:54:21.47:- model run 1 completed by agent 2.
+   28 Mar 12:54:21.47:- model run 3 initiated using agent 2.
+   28 Mar 12:54:21.56:- model run 2 completed by agent 1.
+   28 Mar 12:54:22.00:- model run 3 completed by agent 2.
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+
+ Calculating Jacobian matrix: running model 18 times .....
+   28 Mar 12:54:22.04:- model run 1 initiated using agent 2.
+   28 Mar 12:54:22.04:- model run 2 initiated using agent 1.
+   28 Mar 12:54:22.66:- model run 1 completed by agent 2.
+   28 Mar 12:54:22.66:- model run 3 initiated using agent 2.
+   28 Mar 12:54:22.84:- model run 2 completed by agent 1.
+   28 Mar 12:54:22.84:- model run 4 initiated using agent 1.
+   28 Mar 12:54:23.37:- model run 3 completed by agent 2.
+   28 Mar 12:54:23.37:- model run 5 initiated using agent 2.
+   28 Mar 12:54:23.59:- model run 4 completed by agent 1.
+   28 Mar 12:54:23.59:- model run 6 initiated using agent 1.
+   28 Mar 12:54:23.99:- model run 5 completed by agent 2.
+   28 Mar 12:54:23.99:- model run 7 initiated using agent 2.
+   28 Mar 12:54:24.22:- model run 6 completed by agent 1.
+   28 Mar 12:54:24.22:- model run 8 initiated using agent 1.
+   28 Mar 12:54:24.57:- model run 7 completed by agent 2.
+   28 Mar 12:54:24.57:- model run 9 initiated using agent 2.
+   28 Mar 12:54:24.86:- model run 8 completed by agent 1.
+   28 Mar 12:54:24.86:- model run 10 initiated using agent 1.
+   28 Mar 12:54:25.17:- model run 9 completed by agent 2.
+   28 Mar 12:54:25.17:- model run 11 initiated using agent 2.
+   28 Mar 12:54:25.55:- model run 10 completed by agent 1.
+   28 Mar 12:54:25.55:- model run 12 initiated using agent 1.
+   28 Mar 12:54:25.75:- model run 11 completed by agent 2.
+   28 Mar 12:54:25.75:- model run 13 initiated using agent 2.
+   28 Mar 12:54:26.21:- model run 12 completed by agent 1.
+   28 Mar 12:54:26.21:- model run 14 initiated using agent 1.
+   28 Mar 12:54:26.32:- model run 13 completed by agent 2.
+   28 Mar 12:54:26.32:- model run 15 initiated using agent 2.
+   28 Mar 12:54:26.87:- model run 14 completed by agent 1.
+   28 Mar 12:54:26.87:- model run 16 initiated using agent 1.
+   28 Mar 12:54:26.90:- model run 15 completed by agent 2.
+   28 Mar 12:54:26.90:- model run 17 initiated using agent 2.
+   28 Mar 12:54:27.43:- model run 17 completed by agent 2.
+   28 Mar 12:54:27.43:- model run 18 initiated using agent 2.
+   28 Mar 12:54:27.54:- model run 16 completed by agent 1.
+   28 Mar 12:54:27.98:- model run 18 completed by agent 2.
+
+ Testing parameter upgrades .....
+   28 Mar 12:54:28.00:- model run 1 initiated using agent 2.
+   28 Mar 12:54:28.00:- model run 2 initiated using agent 1.
+   28 Mar 12:54:28.56:- model run 1 completed by agent 2.
+   28 Mar 12:54:28.56:- model run 3 initiated using agent 2.
+   28 Mar 12:54:28.63:- model run 2 completed by agent 1.
+   28 Mar 12:54:29.16:- model run 3 completed by agent 2.
+
+ Testing parameter upgrades after Broyden Jacobian update .....
+   28 Mar 12:54:29.19:- model run 1 initiated using agent 2.
+   28 Mar 12:54:29.19:- model run 2 initiated using agent 1.
+   28 Mar 12:54:29.83:- model run 1 completed by agent 2.
+   28 Mar 12:54:29.83:- model run 3 initiated using agent 2.
+   28 Mar 12:54:29.84:- model run 2 completed by agent 1.
+   28 Mar 12:54:30.36:- model run 3 completed by agent 2.
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+
+ Calculating Jacobian matrix: running model 18 times .....
+   28 Mar 12:54:30.40:- model run 1 initiated using agent 2.
+   28 Mar 12:54:30.40:- model run 2 initiated using agent 1.
+   28 Mar 12:54:30.99:- model run 1 completed by agent 2.
+   28 Mar 12:54:30.99:- model run 3 initiated using agent 2.
+   28 Mar 12:54:31.07:- model run 2 completed by agent 1.
+   28 Mar 12:54:31.07:- model run 4 initiated using agent 1.
+   28 Mar 12:54:31.63:- model run 3 completed by agent 2.
+   28 Mar 12:54:31.63:- model run 5 initiated using agent 2.
+   28 Mar 12:54:31.79:- model run 4 completed by agent 1.
+   28 Mar 12:54:31.79:- model run 6 initiated using agent 1.
+   28 Mar 12:54:32.28:- model run 5 completed by agent 2.
+   28 Mar 12:54:32.28:- model run 7 initiated using agent 2.
+   28 Mar 12:54:32.45:- model run 6 completed by agent 1.
+   28 Mar 12:54:32.45:- model run 8 initiated using agent 1.
+   28 Mar 12:54:32.82:- model run 7 completed by agent 2.
+   28 Mar 12:54:32.82:- model run 9 initiated using agent 2.
+   28 Mar 12:54:33.08:- model run 8 completed by agent 1.
+   28 Mar 12:54:33.08:- model run 10 initiated using agent 1.
+   28 Mar 12:54:33.38:- model run 9 completed by agent 2.
+   28 Mar 12:54:33.38:- model run 11 initiated using agent 2.
+   28 Mar 12:54:33.70:- model run 10 completed by agent 1.
+   28 Mar 12:54:33.70:- model run 12 initiated using agent 1.
+   28 Mar 12:54:33.95:- model run 11 completed by agent 2.
+   28 Mar 12:54:33.95:- model run 13 initiated using agent 2.
+   28 Mar 12:54:34.33:- model run 12 completed by agent 1.
+   28 Mar 12:54:34.33:- model run 14 initiated using agent 1.
+   28 Mar 12:54:34.52:- model run 13 completed by agent 2.
+   28 Mar 12:54:34.52:- model run 15 initiated using agent 2.
+   28 Mar 12:54:34.95:- model run 14 completed by agent 1.
+   28 Mar 12:54:34.95:- model run 16 initiated using agent 1.
+   28 Mar 12:54:35.08:- model run 15 completed by agent 2.
+   28 Mar 12:54:35.08:- model run 17 initiated using agent 2.
+   28 Mar 12:54:35.57:- model run 16 completed by agent 1.
+   28 Mar 12:54:35.57:- model run 18 initiated using agent 1.
+   28 Mar 12:54:35.65:- model run 17 completed by agent 2.
+   28 Mar 12:54:36.13:- model run 18 completed by agent 1.
+
+ Testing parameter upgrades .....
+   28 Mar 12:54:36.14:- model run 1 initiated using agent 1.
+   28 Mar 12:54:36.14:- model run 2 initiated using agent 2.
+   28 Mar 12:54:36.74:- model run 2 completed by agent 2.
+   28 Mar 12:54:36.74:- model run 3 initiated using agent 2.
+   28 Mar 12:54:36.82:- model run 1 completed by agent 1.
+   28 Mar 12:54:37.26:- model run 3 completed by agent 2.
+
+ Testing parameter upgrades after Broyden Jacobian update .....
+   28 Mar 12:54:37.28:- model run 1 initiated using agent 2.
+   28 Mar 12:54:37.28:- model run 2 initiated using agent 1.
+   28 Mar 12:54:37.84:- model run 1 completed by agent 2.
+   28 Mar 12:54:37.84:- model run 3 initiated using agent 2.
+   28 Mar 12:54:37.90:- model run 2 completed by agent 1.
+   28 Mar 12:54:38.34:- model run 3 completed by agent 2.
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+
+ Calculating Jacobian matrix: running model 36 times .....
+   28 Mar 12:54:38.37:- model run 1 initiated using agent 2.
+   28 Mar 12:54:38.37:- model run 2 initiated using agent 1.
+   28 Mar 12:54:38.95:- model run 1 completed by agent 2.
+   28 Mar 12:54:38.95:- model run 3 initiated using agent 2.
+   28 Mar 12:54:39.07:- model run 2 completed by agent 1.
+   28 Mar 12:54:39.07:- model run 4 initiated using agent 1.
+   28 Mar 12:54:39.63:- model run 3 completed by agent 2.
+   28 Mar 12:54:39.63:- model run 5 initiated using agent 2.
+   28 Mar 12:54:39.80:- model run 4 completed by agent 1.
+   28 Mar 12:54:39.80:- model run 6 initiated using agent 1.
+   28 Mar 12:54:40.38:- model run 5 completed by agent 2.
+   28 Mar 12:54:40.38:- model run 7 initiated using agent 2.
+   28 Mar 12:54:40.56:- model run 6 completed by agent 1.
+   28 Mar 12:54:40.56:- model run 8 initiated using agent 1.
+   28 Mar 12:54:40.95:- model run 7 completed by agent 2.
+   28 Mar 12:54:40.95:- model run 9 initiated using agent 2.
+   28 Mar 12:54:41.19:- model run 8 completed by agent 1.
+   28 Mar 12:54:41.19:- model run 10 initiated using agent 1.
+   28 Mar 12:54:41.53:- model run 9 completed by agent 2.
+   28 Mar 12:54:41.53:- model run 11 initiated using agent 2.
+   28 Mar 12:54:41.84:- model run 10 completed by agent 1.
+   28 Mar 12:54:41.84:- model run 12 initiated using agent 1.
+   28 Mar 12:54:42.08:- model run 11 completed by agent 2.
+   28 Mar 12:54:42.08:- model run 13 initiated using agent 2.
+   28 Mar 12:54:42.46:- model run 12 completed by agent 1.
+   28 Mar 12:54:42.46:- model run 14 initiated using agent 1.
+   28 Mar 12:54:42.63:- model run 13 completed by agent 2.
+   28 Mar 12:54:42.63:- model run 15 initiated using agent 2.
+   28 Mar 12:54:43.07:- model run 14 completed by agent 1.
+   28 Mar 12:54:43.07:- model run 16 initiated using agent 1.
+   28 Mar 12:54:43.19:- model run 15 completed by agent 2.
+   28 Mar 12:54:43.19:- model run 17 initiated using agent 2.
+   28 Mar 12:54:43.71:- model run 16 completed by agent 1.
+   28 Mar 12:54:43.71:- model run 18 initiated using agent 1.
+   28 Mar 12:54:43.77:- model run 17 completed by agent 2.
+   28 Mar 12:54:43.77:- model run 19 initiated using agent 2.
+   28 Mar 12:54:44.30:- model run 19 completed by agent 2.
+   28 Mar 12:54:44.30:- model run 20 initiated using agent 2.
+   28 Mar 12:54:44.35:- model run 18 completed by agent 1.
+   28 Mar 12:54:44.35:- model run 21 initiated using agent 1.
+   28 Mar 12:54:44.85:- model run 20 completed by agent 2.
+   28 Mar 12:54:44.85:- model run 22 initiated using agent 2.
+   28 Mar 12:54:44.99:- model run 21 completed by agent 1.
+   28 Mar 12:54:44.99:- model run 23 initiated using agent 1.
+   28 Mar 12:54:45.43:- model run 22 completed by agent 2.
+   28 Mar 12:54:45.43:- model run 24 initiated using agent 2.
+   28 Mar 12:54:45.63:- model run 23 completed by agent 1.
+   28 Mar 12:54:45.63:- model run 25 initiated using agent 1.
+   28 Mar 12:54:46.01:- model run 24 completed by agent 2.
+   28 Mar 12:54:46.01:- model run 26 initiated using agent 2.
+   28 Mar 12:54:46.27:- model run 25 completed by agent 1.
+   28 Mar 12:54:46.27:- model run 27 initiated using agent 1.
+   28 Mar 12:54:46.57:- model run 26 completed by agent 2.
+   28 Mar 12:54:46.57:- model run 28 initiated using agent 2.
+   28 Mar 12:54:46.90:- model run 27 completed by agent 1.
+   28 Mar 12:54:46.90:- model run 29 initiated using agent 1.
+   28 Mar 12:54:47.13:- model run 28 completed by agent 2.
+   28 Mar 12:54:47.13:- model run 30 initiated using agent 2.
+   28 Mar 12:54:47.54:- model run 29 completed by agent 1.
+   28 Mar 12:54:47.54:- model run 31 initiated using agent 1.
+   28 Mar 12:54:47.71:- model run 30 completed by agent 2.
+   28 Mar 12:54:47.71:- model run 32 initiated using agent 2.
+   28 Mar 12:54:48.18:- model run 31 completed by agent 1.
+   28 Mar 12:54:48.18:- model run 33 initiated using agent 1.
+   28 Mar 12:54:48.29:- model run 32 completed by agent 2.
+   28 Mar 12:54:48.29:- model run 34 initiated using agent 2.
+   28 Mar 12:54:48.78:- model run 33 completed by agent 1.
+   28 Mar 12:54:48.78:- model run 35 initiated using agent 1.
+   28 Mar 12:54:48.84:- model run 34 completed by agent 2.
+   28 Mar 12:54:48.84:- model run 36 initiated using agent 2.
+   28 Mar 12:54:49.36:- model run 35 completed by agent 1.
+   28 Mar 12:54:49.38:- model run 36 completed by agent 2.
+
+ Testing parameter upgrades .....
+   28 Mar 12:54:49.40:- model run 1 initiated using agent 2.
+   28 Mar 12:54:49.40:- model run 2 initiated using agent 1.
+   28 Mar 12:54:49.95:- model run 1 completed by agent 2.
+   28 Mar 12:54:49.95:- model run 3 initiated using agent 2.
+   28 Mar 12:54:50.00:- model run 2 completed by agent 1.
+   28 Mar 12:54:50.45:- model run 3 completed by agent 2.
+
+ Testing parameter upgrades after Broyden Jacobian update .....
+   28 Mar 12:54:50.46:- model run 1 initiated using agent 2.
+   28 Mar 12:54:50.46:- model run 2 initiated using agent 1.
+   28 Mar 12:54:51.03:- model run 1 completed by agent 2.
+   28 Mar 12:54:51.03:- model run 3 initiated using agent 2.
+   28 Mar 12:54:51.10:- model run 2 completed by agent 1.
+   28 Mar 12:54:51.60:- model run 3 completed by agent 2.
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+
+ Calculating Jacobian matrix: running model 36 times .....
+   28 Mar 12:54:51.65:- model run 1 initiated using agent 2.
+   28 Mar 12:54:51.65:- model run 2 initiated using agent 1.
+   28 Mar 12:54:52.21:- model run 1 completed by agent 2.
+   28 Mar 12:54:52.21:- model run 3 initiated using agent 2.
+   28 Mar 12:54:52.26:- model run 2 completed by agent 1.
+   28 Mar 12:54:52.26:- model run 4 initiated using agent 1.
+   28 Mar 12:54:52.85:- model run 3 completed by agent 2.
+   28 Mar 12:54:52.85:- model run 5 initiated using agent 2.
+   28 Mar 12:54:52.97:- model run 4 completed by agent 1.
+   28 Mar 12:54:52.98:- model run 6 initiated using agent 1.
+   28 Mar 12:54:53.52:- model run 5 completed by agent 2.
+   28 Mar 12:54:53.52:- model run 7 initiated using agent 2.
+   28 Mar 12:54:53.67:- model run 6 completed by agent 1.
+   28 Mar 12:54:53.67:- model run 8 initiated using agent 1.
+   28 Mar 12:54:54.08:- model run 7 completed by agent 2.
+   28 Mar 12:54:54.08:- model run 9 initiated using agent 2.
+   28 Mar 12:54:54.29:- model run 8 completed by agent 1.
+   28 Mar 12:54:54.29:- model run 10 initiated using agent 1.
+   28 Mar 12:54:54.64:- model run 9 completed by agent 2.
+   28 Mar 12:54:54.64:- model run 11 initiated using agent 2.
+   28 Mar 12:54:54.89:- model run 10 completed by agent 1.
+   28 Mar 12:54:54.89:- model run 12 initiated using agent 1.
+   28 Mar 12:54:55.24:- model run 11 completed by agent 2.
+   28 Mar 12:54:55.24:- model run 13 initiated using agent 2.
+   28 Mar 12:54:55.53:- model run 12 completed by agent 1.
+   28 Mar 12:54:55.53:- model run 14 initiated using agent 1.
+   28 Mar 12:54:55.78:- model run 13 completed by agent 2.
+   28 Mar 12:54:55.78:- model run 15 initiated using agent 2.
+   28 Mar 12:54:56.15:- model run 14 completed by agent 1.
+   28 Mar 12:54:56.15:- model run 16 initiated using agent 1.
+   28 Mar 12:54:56.36:- model run 15 completed by agent 2.
+   28 Mar 12:54:56.37:- model run 17 initiated using agent 2.
+   28 Mar 12:54:56.77:- model run 16 completed by agent 1.
+   28 Mar 12:54:56.77:- model run 18 initiated using agent 1.
+   28 Mar 12:54:56.90:- model run 17 completed by agent 2.
+   28 Mar 12:54:56.90:- model run 19 initiated using agent 2.
+   28 Mar 12:54:57.42:- model run 18 completed by agent 1.
+   28 Mar 12:54:57.42:- model run 20 initiated using agent 1.
+   28 Mar 12:54:57.45:- model run 19 completed by agent 2.
+   28 Mar 12:54:57.45:- model run 21 initiated using agent 2.
+   28 Mar 12:54:57.98:- model run 21 completed by agent 2.
+   28 Mar 12:54:57.98:- model run 22 initiated using agent 2.
+   28 Mar 12:54:58.01:- model run 20 completed by agent 1.
+   28 Mar 12:54:58.01:- model run 23 initiated using agent 1.
+   28 Mar 12:54:58.54:- model run 22 completed by agent 2.
+   28 Mar 12:54:58.54:- model run 24 initiated using agent 2.
+   28 Mar 12:54:58.59:- model run 23 completed by agent 1.
+   28 Mar 12:54:58.59:- model run 25 initiated using agent 1.
+   28 Mar 12:54:59.08:- model run 24 completed by agent 2.
+   28 Mar 12:54:59.08:- model run 26 initiated using agent 2.
+   28 Mar 12:54:59.17:- model run 25 completed by agent 1.
+   28 Mar 12:54:59.17:- model run 27 initiated using agent 1.
+   28 Mar 12:54:59.63:- model run 26 completed by agent 2.
+   28 Mar 12:54:59.64:- model run 28 initiated using agent 2.
+   28 Mar 12:54:59.81:- model run 27 completed by agent 1.
+   28 Mar 12:54:59.81:- model run 29 initiated using agent 1.
+   28 Mar 12:55:00.21:- model run 28 completed by agent 2.
+   28 Mar 12:55:00.21:- model run 30 initiated using agent 2.
+   28 Mar 12:55:00.55:- model run 29 completed by agent 1.
+   28 Mar 12:55:00.55:- model run 31 initiated using agent 1.
+   28 Mar 12:55:00.79:- model run 30 completed by agent 2.
+   28 Mar 12:55:00.79:- model run 32 initiated using agent 2.
+   28 Mar 12:55:01.20:- model run 31 completed by agent 1.
+   28 Mar 12:55:01.20:- model run 33 initiated using agent 1.
+   28 Mar 12:55:01.33:- model run 32 completed by agent 2.
+   28 Mar 12:55:01.33:- model run 34 initiated using agent 2.
+   28 Mar 12:55:01.83:- model run 33 completed by agent 1.
+   28 Mar 12:55:01.83:- model run 35 initiated using agent 1.
+   28 Mar 12:55:01.90:- model run 34 completed by agent 2.
+   28 Mar 12:55:01.90:- model run 36 initiated using agent 2.
+   28 Mar 12:55:02.45:- model run 35 completed by agent 1.
+   28 Mar 12:55:02.46:- model run 36 completed by agent 2.
+
+ Testing parameter upgrades .....
+   28 Mar 12:55:02.48:- model run 1 initiated using agent 2.
+   28 Mar 12:55:02.48:- model run 2 initiated using agent 1.
+   28 Mar 12:55:03.03:- model run 1 completed by agent 2.
+   28 Mar 12:55:03.03:- model run 3 initiated using agent 2.
+   28 Mar 12:55:03.15:- model run 2 completed by agent 1.
+   28 Mar 12:55:03.54:- model run 3 completed by agent 2.
+
+ Testing parameter upgrades after Broyden Jacobian update .....
+   28 Mar 12:55:03.56:- model run 1 initiated using agent 2.
+   28 Mar 12:55:03.56:- model run 2 initiated using agent 1.
+   28 Mar 12:55:04.20:- model run 1 completed by agent 2.
+   28 Mar 12:55:04.20:- model run 3 initiated using agent 2.
+   28 Mar 12:55:04.22:- model run 2 completed by agent 1.
+   28 Mar 12:55:04.73:- model run 3 completed by agent 2.
+
+ STATISTICS
+
+ For run management efficiency statistics see file gondebeek_ss_drn_reg.rme.

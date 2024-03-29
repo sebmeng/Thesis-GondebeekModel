@@ -1,0 +1,3290 @@
+                PEST RUN RECORD: CASE gondebeek_ss_drn_reg
+
+
+ PEST_HP version: 17.1
+
+
+ PEST run mode:-
+
+    Regularisation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :    18
+    Number of adjustable parameters                :    18
+    Number of parameter groups                     :     3
+    Number of observations                         :    31
+    Number of prior estimates                      :    18
+    Number of observation/prior_info groups        :     4
+
+
+ Model command line(s):-
+ 
+    run_model.bat
+
+
+ Model interface files:-
+
+    Templates:
+       zones_layer1.tpl
+       zones_layer2.tpl
+       zones_layer3.tpl
+       zones_layer4.tpl
+       riv.tpl
+       drn.tpl
+    for model input files:
+       Gondebeek_SS.npf_k_layer1.txt
+       Gondebeek_SS.npf_k_layer2.txt
+       Gondebeek_SS.npf_k_layer3.txt
+       Gondebeek_SS.npf_k_layer4.txt
+       Gondebeek_SS.riv_stress_period_data_1.txt
+       Gondebeek_SS.drn_stress_period_data_1.txt
+
+    (Parameter values written using single precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       simulated.ins
+    for reading model output files:
+       simulated.smp
+
+
+ Singular value decomposition:-
+
+    Perform SVD on XtQX or Q^(1/2)X               : XtQX
+    Max. number of singular values to employ      : 18
+    Ratio of lowest/highest singular value        :  5.000000E-07
+    Record eigenvectors in SVD file               : no
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ c            relative    1.0000E-02   none         switch       2.000     parabolic
+ c2           relative    1.0000E-02   none         switch       2.000     parabolic
+ k            relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ k1           none              relative    1.00000       1.000000E-03    700.000    
+ k2           none              relative    1.00000       1.000000E-03    700.000    
+ k3           none              relative    1.00000       1.000000E-03    700.000    
+ k4           none              relative    5.00000       1.000000E-03    700.000    
+ k5           none              relative    6.00000       1.000000E-03    700.000    
+ k6           none              relative    1.00000       1.000000E-03    700.000    
+ k7           none              relative    1.50000       1.000000E-03    700.000    
+ k8           none              relative    6.00000       1.000000E-03    700.000    
+ k9           none              relative   0.100000       1.000000E-03    700.000    
+ k10          none              relative    1.00000       1.000000E-03    700.000    
+ k11          none              relative    1.50000       1.000000E-03    700.000    
+ k12          none              relative    2.70000       1.000000E-03    700.000    
+ k13          none              relative   0.100000       1.000000E-03    700.000    
+ k14          none              relative    1.00000       1.000000E-03    700.000    
+ k15          none              relative    1.50000       1.000000E-03    700.000    
+ k16          none              relative    2.70000       1.000000E-03    700.000    
+ c            none              relative    100.000       1.000000E-05    1000.00    
+ c2           none              relative    10.0000       1.000000E-05    1000.00    
+
+ Name         Group          Scale         Offset        Model command number
+ k1           k             1.00000        0.00000            1
+ k2           k             1.00000        0.00000            1
+ k3           k             1.00000        0.00000            1
+ k4           k             1.00000        0.00000            1
+ k5           k             1.00000        0.00000            1
+ k6           k             1.00000        0.00000            1
+ k7           k             1.00000        0.00000            1
+ k8           k             1.00000        0.00000            1
+ k9           k             1.00000        0.00000            1
+ k10          k             1.00000        0.00000            1
+ k11          k             1.00000        0.00000            1
+ k12          k             1.00000        0.00000            1
+ k13          k             1.00000        0.00000            1
+ k14          k             1.00000        0.00000            1
+ k15          k             1.00000        0.00000            1
+ k16          k             1.00000        0.00000            1
+ c            c             1.00000        0.00000            1
+ c2           c2            1.00000        0.00000            1
+
+
+ Prior information:-
+
+ Prior info               Factor             Parameter              Prior         Weight
+ name                                                               information
+                   k1      1.00000       *       k1            =     1.00000       1.000
+                   k2      1.00000       *       k2            =     1.00000       1.000
+                   k3      1.00000       *       k3            =     1.00000       1.000
+                   k4      1.00000       *       k4            =     5.00000       1.000
+                   k5      1.00000       *       k5            =     6.00000       1.000
+                   k6      1.00000       *       k6            =     1.00000       1.000
+                   k7      1.00000       *       k7            =     1.50000       1.000
+                   k8      1.00000       *       k8            =     6.00000       1.000
+                   k9      1.00000       *       k9            =    0.100000       1.000
+                  k10      1.00000       *       k10           =     1.00000       1.000
+                  k11      1.00000       *       k11           =     1.50000       1.000
+                  k12      1.00000       *       k12           =     2.70000       1.000
+                  k13      1.00000       *       k13           =    0.100000       1.000
+                  k14      1.00000       *       k14           =     1.00000       1.000
+                  k15      1.00000       *       k15           =     1.50000       1.000
+                  k16      1.00000       *       k16           =     2.70000       1.000
+                    c      1.00000       *       c             =     40.0000       1.000
+                   c2      1.00000       *       c2            =     10.0000       1.000
+
+ Prior Info Name           Observation Group
+ k1                           regul_k
+ k2                           regul_k
+ k3                           regul_k
+ k4                           regul_k
+ k5                           regul_k
+ k6                           regul_k
+ k7                           regul_k
+ k8                           regul_k
+ k9                           regul_k
+ k10                          regul_k
+ k11                          regul_k
+ k12                          regul_k
+ k13                          regul_k
+ k14                          regul_k
+ k15                          regul_k
+ k16                          regul_k
+ c                            regul_c
+ c2                           regul_c2
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  prefixaelm_1_1          26.5700          1.000       head        
+  prefixaelm_2_1          26.2900          1.000       head        
+  prefixaelm_3_1          26.7200          1.000       head        
+  prefixmel_1_1           16.4200          1.000       head        
+  prefixmel_2_1           18.9100          1.000       head        
+  prefixmel_3_1           17.4000          1.000       head        
+  prefixmel_4_1           16.4300          1.000       head        
+  prefixmer_5_1           21.7000          1.000       head        
+  prefixmer_7_1           31.6800          1.000       head        
+  prefixmoort_1_1         19.8600          1.000       head        
+  prefixmoort_2_1         19.8700          1.000       head        
+  prefixmoort_3_1         20.7100          1.000       head        
+  prefixmoort_4_1         20.9600          1.000       head        
+  prefixmoort_5_1         21.0900          1.000       head        
+  prefixmoort_6_1         20.4900          1.000       head        
+  prefixmoort_7_1         20.7000          1.000       head        
+  prefixmoort_8_1         19.2800          1.000       head        
+  prefixntp_1_1           12.3700          10.00       head        
+  prefixntp_2_1           12.1400          10.00       head        
+  prefixntp_3_1           12.5400          10.00       head        
+  prefixntp_4_1           12.1000          10.00       head        
+  prefixntp_5_1           12.6200          10.00       head        
+  prefixntp_6_1           12.2700          10.00       head        
+  prefixoost_1_1          25.8200          1.000       head        
+  prefixoost_16_1         13.3300          1.000       head        
+  prefixoost_17_1         13.1700          1.000       head        
+  prefixoost_2_1          42.8100          1.000       head        
+  prefixoost_3_1          43.2400          1.000       head        
+  prefixoost_4_1          55.6700          1.000       head        
+  prefixoost_5_1          51.8100          1.000       head        
+  prefixoost_9_1          41.3200          1.000       head        
+
+
+ Control settings:-
+
+    Forgive model run failure during lamda testing               : yes
+    Forgive model run failure during Jacobian runs               : yes
+
+    Perform Broyden's update of Jacobian matrix                  : yes
+    Maximum number of updates per iteration                      : 20
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   : na
+    Maximum relative parameter change (relative-limited changes) :  10.000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+    (However PEST_HP will not switch in 1st or 2nd iteration if 
+    any parameter upgrades are fac/rel/abs-change-limited.)
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.50000E-02
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :  30
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options:-
+
+    Save run results file                                        : no
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+ Extra settings for regularisation mode:-
+
+    Target/current measurement objective function ratio          : 0.10000    
+    Acceptable/target measurement objective function ratio       :  1.0500    
+    Minimum target measurement objective function value          : 1.00000E-10
+    Terminate inversion when measurement obj. fn. below target   : yes
+
+    Initial regularisation weight factor                         :  1.0000    
+    Minimum regularisation weight factor                         : 1.00000E-10
+    Maximum regularisation weight factor                         : 1.00000E+10
+
+    Weight factor solution adjustment ratio                      :  1.3000    
+    Weight factor solution tolerance                             : 1.00000E-02
+    Automatic inter-regularisation group weights adjustment      : yes
+    Use sensitivities or number of items                         : sensitivities
+
+    Implement memory conservation                                : no
+    Declare all regularisation information as linear             : no
+
+
+ Extra settings for PEST_HP:-
+
+    Lower limit on number of simultaneous parameter upgrade tests [UPTESTMIN]         : not set
+    Upper limit on number of simultaneous parameter upgrade tests [UPTESTLIM]         : not set
+    Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+    Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+    Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+    PEST_HP time-out termination criterion [HARDSTOPHOURS or SOFTSTOPHOURS]           : none
+    Warning threshold for high sensitivities [JCOWARNTHRESH]                          : 1.00000E+30
+    Zeroing threshold for high sensitivities [JCOZEROTHRESH]                          : not set
+    Number of distribution files                                                      : 0
+ 
+ 
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Current regularisation weight factor                     =   1.0000    
+    Current value of measurement objective function          =   2699.9    
+    Current value of regularisation objective function       =   3600.0    
+ 
+    Sum of squared weighted residuals (ie phi)               =   6299.9    
+    Contribution to phi from observation group "head"        =   2699.9    
+    Contribution to phi from observation group "regul_c"     =   3600.0    
+    Contribution to phi from observation group "regul_c2"    =   0.0000    
+    Contribution to phi from observation group "regul_k"     =   0.0000    
+ 
+       Current parameter values
+       k1               1.00000    
+       k2               1.00000    
+       k3               1.00000    
+       k4               5.00000    
+       k5               6.00000    
+       k6               1.00000    
+       k7               1.50000    
+       k8               6.00000    
+       k9              0.100000    
+       k10              1.00000    
+       k11              1.50000    
+       k12              2.70000    
+       k13             0.100000    
+       k14              1.00000    
+       k15              1.50000    
+       k16              2.70000    
+       c                100.000    
+       c2               10.0000    
+
+
+ OPTIMISATION ITERATION NO.        : 1
+    Model calls so far             : 1
+    Current regularisation weight factor                     :   1.0000    
+    Current value of measurement objective function          :   2699.9    
+    Current value of regularisation objective function       :   3600.0    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   6299.9    
+    Contribution to phi from observation group "head"        :   2699.9    
+    Contribution to phi from observation group "regul_c"     :   3600.0    
+    Contribution to phi from observation group "regul_c2"    :   0.0000    
+    Contribution to phi from observation group "regul_k"     :   0.0000    
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         16.0000    
+     regul_c2        16.0000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   269.99    
+ 
+    Re-calculated regularisation weight factor               :  7.39806E-02
+    New starting objective function for this itn. (ie. phi)  :   7744.0    
+    Contribution to phi from observation group "head"        :   2699.9    
+    Contribution to phi from observation group "regul_c"     :   5044.0    
+    Contribution to phi from observation group "regul_c2"    :   0.0000    
+    Contribution to phi from observation group "regul_k"     :   0.0000    
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   4874.9      (  0.630 of starting phi)
+     Meas. fn. =   2245.9    
+    Regul. fn. =  4.80354E+05
+
+        Lambda =   404.26     upgrade fraction =   1.0000     ----->
+           Phi =   5893.7      (  0.761 of starting phi)
+     Meas. fn. =   2257.8    
+    Regul. fn. =  6.64335E+05
+
+        Lambda =   1876.4     upgrade fraction =   1.0000     ----->
+           Phi =   4230.2      (  0.546 of starting phi)
+     Meas. fn. =   2204.1    
+    Regul. fn. =  3.70187E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   4241.8      (  0.548 of starting phi)
+     Meas. fn. =   2322.6    
+    Regul. fn. =  3.50671E+05
+
+        Lambda =   404.26     upgrade fraction =   1.0000     ----->
+           Phi =   5394.6      (  0.697 of starting phi)
+     Meas. fn. =   2332.2    
+    Regul. fn. =  5.59525E+05
+
+        Lambda =   1876.4     upgrade fraction =   1.0000     ----->
+           Phi =   4516.8      (  0.583 of starting phi)
+     Meas. fn. =   2278.0    
+    Regul. fn. =  4.09052E+05
+
+       Current parameter values                 Previous parameter values
+       k1               10.1854                 k1                1.00000    
+       k2              0.744682                 k2                1.00000    
+       k3              0.988472                 k3                1.00000    
+       k4               4.99855                 k4                5.00000    
+       k5               6.44901                 k5                6.00000    
+       k6              0.722390                 k6                1.00000    
+       k7               1.14624                 k7                1.50000    
+       k8               6.00828                 k8                6.00000    
+       k9              0.744425                 k9               0.100000    
+       k10             0.430160                 k10               1.00000    
+       k11             0.726323                 k11               1.50000    
+       k12              2.45554                 k12               2.70000    
+       k13             1.000000E-03             k13              0.100000    
+       k14             1.000000E-03             k14               1.00000    
+       k15             1.000000E-03             k15               1.50000    
+       k16              1.01767                 k16               2.70000    
+       c                76.5357                 c                 100.000    
+       c2               20.5274                 c2                10.0000    
+    Maximum relative change:  9.185     ["k1"]
+
+
+ OPTIMISATION ITERATION NO.        : 2
+    Model calls so far             : 25
+    Current regularisation weight factor                     :  7.39806E-02
+    Current value of measurement objective function          :   2204.1    
+    Current value of regularisation objective function       :  3.70187E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   4230.2    
+    Contribution to phi from observation group "head"        :   2204.1    
+    Contribution to phi from observation group "regul_c"     :   1870.3    
+    Contribution to phi from observation group "regul_c2"    :   155.28    
+    Contribution to phi from observation group "regul_k"     :  0.50530    
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   220.41    
+ 
+    Re-calculated regularisation weight factor               :  6.90848E-02
+    New starting objective function for this itn. (ie. phi)  :   3970.9    
+    Contribution to phi from observation group "head"        :   2204.1    
+    Contribution to phi from observation group "regul_c"     :   1630.9    
+    Contribution to phi from observation group "regul_c2"    :   135.41    
+    Contribution to phi from observation group "regul_k"     :  0.44063    
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   3835.6      (  0.966 of starting phi)
+     Meas. fn. =   2161.5    
+    Regul. fn. =  3.50767E+05
+
+        Lambda =   377.82     upgrade fraction =   1.0000     ----->
+           Phi =   3867.6      (  0.974 of starting phi)
+     Meas. fn. =   2170.6    
+    Regul. fn. =  3.55557E+05
+
+        Lambda =   2007.7     upgrade fraction =   1.0000     ----->
+           Phi =   3817.1      (  0.961 of starting phi)
+     Meas. fn. =   2155.7    
+    Regul. fn. =  3.48100E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   3837.3      (  0.966 of starting phi)
+     Meas. fn. =   2162.1    
+    Regul. fn. =  3.50991E+05
+
+        Lambda =   377.82     upgrade fraction =   1.0000     ----->
+           Phi =   3869.8      (  0.975 of starting phi)
+     Meas. fn. =   2171.5    
+    Regul. fn. =  3.55854E+05
+
+        Lambda =   2007.7     upgrade fraction =   1.0000     ----->
+           Phi =   3818.0      (  0.962 of starting phi)
+     Meas. fn. =   2156.0    
+    Regul. fn. =  3.48223E+05
+
+    Relative phi reduction between optimisation iterations less than 0.1000
+    Switch to higher order derivatives calculation
+
+       Current parameter values                 Previous parameter values
+       k1               9.49964                 k1                10.1854    
+       k2              0.657047                 k2               0.744682    
+       k3              0.987819                 k3               0.988472    
+       k4               4.99847                 k4                4.99855    
+       k5               6.42688                 k5                6.44901    
+       k6              0.648851                 k6               0.722390    
+       k7               1.06476                 k7                1.14624    
+       k8               6.00166                 k8                6.00828    
+       k9              0.736200                 k9               0.744425    
+       k10             0.300997                 k10              0.430160    
+       k11             0.642019                 k11              0.726323    
+       k12              2.41638                 k12               2.45554    
+       k13             1.100000E-02             k13              1.000000E-03
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.795923                 k16               1.01767    
+       c                75.2379                 c                 76.5357    
+       c2               20.8507                 c2                20.5274    
+    Maximum relative change:  10.00     ["k13"]
+
+
+ OPTIMISATION ITERATION NO.        : 3
+    Model calls so far             : 49
+    Current regularisation weight factor                     :  6.90848E-02
+    Current value of measurement objective function          :   2155.7    
+    Current value of regularisation objective function       :  3.48100E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   3817.1    
+    Contribution to phi from observation group "head"        :   2155.7    
+    Contribution to phi from observation group "regul_c"     :   1517.1    
+    Contribution to phi from observation group "regul_c2"    :   143.85    
+    Contribution to phi from observation group "regul_k"     :  0.38871    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   215.57    
+ 
+    Re-calculated regularisation weight factor               :  4.38473E-02
+    New starting objective function for this itn. (ie. phi)  :   2824.9    
+    Contribution to phi from observation group "head"        :   2155.7    
+    Contribution to phi from observation group "regul_c"     :   611.15    
+    Contribution to phi from observation group "regul_c2"    :   57.949    
+    Contribution to phi from observation group "regul_k"     :  0.15658    
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   2252.2      (  0.797 of starting phi)
+     Meas. fn. =   1679.2    
+    Regul. fn. =  2.98010E+05
+
+        Lambda =   375.03     upgrade fraction =   1.0000     ----->
+           Phi =   2349.3      (  0.832 of starting phi)
+     Meas. fn. =   1772.6    
+    Regul. fn. =  2.99934E+05
+
+        Lambda =   2022.6     upgrade fraction =   1.0000     ----->
+           Phi =   2214.2      (  0.784 of starting phi)
+     Meas. fn. =   1635.5    
+    Regul. fn. =  3.00976E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   2384.8      (  0.844 of starting phi)
+     Meas. fn. =   1793.6    
+    Regul. fn. =  3.07515E+05
+
+        Lambda =   375.03     upgrade fraction =   1.0000     ----->
+           Phi =   2522.9      (  0.893 of starting phi)
+     Meas. fn. =   1916.9    
+    Regul. fn. =  3.15204E+05
+
+        Lambda =   2022.6     upgrade fraction =   1.0000     ----->
+           Phi =   2288.2      (  0.810 of starting phi)
+     Meas. fn. =   1701.4    
+    Regul. fn. =  3.05180E+05
+
+       Current parameter values                 Previous parameter values
+       k1               3.18073                 k1                9.49964    
+       k2              3.950366E-02             k2               0.657047    
+       k3              0.994202                 k3               0.987819    
+       k4               4.99982                 k4                4.99847    
+       k5               6.43554                 k5                6.42688    
+       k6              0.461611                 k6               0.648851    
+       k7              0.401958                 k7                1.06476    
+       k8               5.95498                 k8                6.00166    
+       k9              0.676651                 k9               0.736200    
+       k10             1.000000E-03             k10              0.300997    
+       k11             1.000000E-03             k11              0.642019    
+       k12              2.21905                 k12               2.41638    
+       k13             0.121000                 k13              1.100000E-02
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              0.795923    
+       c                70.5782                 c                 75.2379    
+       c2               25.5105                 c2                20.8507    
+    Maximum relative change:  10.00     ["k13"]
+
+
+ OPTIMISATION ITERATION NO.        : 4
+    Model calls so far             : 91
+    Current regularisation weight factor                     :  4.38473E-02
+    Current value of measurement objective function          :   1635.5    
+    Current value of regularisation objective function       :  3.00976E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   2214.2    
+    Contribution to phi from observation group "head"        :   1635.5    
+    Contribution to phi from observation group "regul_c"     :   460.20    
+    Contribution to phi from observation group "regul_c2"    :   118.41    
+    Contribution to phi from observation group "regul_k"     :  4.17283E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   163.55    
+ 
+    Re-calculated regularisation weight factor               :  3.10775E-02
+    New starting objective function for this itn. (ie. phi)  :   1926.2    
+    Contribution to phi from observation group "head"        :   1635.5    
+    Contribution to phi from observation group "regul_c"     :   231.18    
+    Contribution to phi from observation group "regul_c2"    :   59.482    
+    Contribution to phi from observation group "regul_k"     :  2.09623E-02
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   1920.1      (  0.997 of starting phi)
+     Meas. fn. =   1629.8    
+    Regul. fn. =  3.00607E+05
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1921.5      (  0.998 of starting phi)
+     Meas. fn. =   1631.2    
+    Regul. fn. =  3.00529E+05
+
+        Lambda =   2217.6     upgrade fraction =   1.0000     ----->
+           Phi =   1921.4      (  0.998 of starting phi)
+     Meas. fn. =   1630.9    
+    Regul. fn. =  3.00800E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =   870.95     upgrade fraction =   1.0000     ----->
+           Phi =   1920.8      (  0.997 of starting phi)
+     Meas. fn. =   1630.4    
+    Regul. fn. =  3.00666E+05
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1922.2      (  0.998 of starting phi)
+     Meas. fn. =   1631.8    
+    Regul. fn. =  3.00610E+05
+
+        Lambda =   2217.6     upgrade fraction =   1.0000     ----->
+           Phi =   1921.9      (  0.998 of starting phi)
+     Meas. fn. =   1631.3    
+    Regul. fn. =  3.00824E+05
+
+       Current parameter values                 Previous parameter values
+       k1               3.13348                 k1                3.18073    
+       k2              1.401911E-02             k2               3.950366E-02
+       k3               1.00014                 k3               0.994202    
+       k4               4.99983                 k4                4.99982    
+       k5               6.48392                 k5                6.43554    
+       k6              0.454898                 k6               0.461611    
+       k7              0.389149                 k7               0.401958    
+       k8               5.95645                 k8                5.95498    
+       k9              0.678003                 k9               0.676651    
+       k10             8.806718E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12              2.20695                 k12               2.21905    
+       k13             0.130441                 k13              0.121000    
+       k14             1.100000E-02             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                70.5128                 c                 70.5782    
+       c2               25.5926                 c2                25.5105    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 5
+    Model calls so far             : 133
+    Current regularisation weight factor                     :  3.10775E-02
+    Current value of measurement objective function          :   1629.8    
+    Current value of regularisation objective function       :  3.00607E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1920.1    
+    Contribution to phi from observation group "head"        :   1629.8    
+    Contribution to phi from observation group "regul_c"     :   230.20    
+    Contribution to phi from observation group "regul_c2"    :   60.113    
+    Contribution to phi from observation group "regul_k"     :  2.08697E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   162.98    
+ 
+    Re-calculated regularisation weight factor               :  2.11759E-02
+    New starting objective function for this itn. (ie. phi)  :   1764.6    
+    Contribution to phi from observation group "head"        :   1629.8    
+    Contribution to phi from observation group "regul_c"     :   106.88    
+    Contribution to phi from observation group "regul_c2"    :   27.910    
+    Contribution to phi from observation group "regul_k"     :  9.68958E-03
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1761.8      (  0.998 of starting phi)
+     Meas. fn. =   1627.0    
+    Regul. fn. =  3.00602E+05
+
+        Lambda =   134.10     upgrade fraction =   1.0000     ----->
+           Phi =   1761.8      (  0.998 of starting phi)
+     Meas. fn. =   1627.0    
+    Regul. fn. =  3.00472E+05
+
+        Lambda =   872.48     upgrade fraction =   1.0000     ----->
+           Phi =   1761.5      (  0.998 of starting phi)
+     Meas. fn. =   1626.7    
+    Regul. fn. =  3.00709E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1762.4      (  0.999 of starting phi)
+     Meas. fn. =   1627.6    
+    Regul. fn. =  3.00615E+05
+
+        Lambda =   134.10     upgrade fraction =   1.0000     ----->
+           Phi =   1762.6      (  0.999 of starting phi)
+     Meas. fn. =   1627.8    
+    Regul. fn. =  3.00524E+05
+
+        Lambda =   872.48     upgrade fraction =   1.0000     ----->
+           Phi =   1761.9      (  0.998 of starting phi)
+     Meas. fn. =   1627.0    
+    Regul. fn. =  3.00706E+05
+
+       Current parameter values                 Previous parameter values
+       k1               3.11733                 k1                3.13348    
+       k2              5.420191E-03             k2               1.401911E-02
+       k3               1.00355                 k3                1.00014    
+       k4               4.99984                 k4                4.99983    
+       k5               6.51291                 k5                6.48392    
+       k6              0.459375                 k6               0.454898    
+       k7              0.380841                 k7               0.389149    
+       k8               5.95734                 k8                5.95645    
+       k9              0.678784                 k9               0.678003    
+       k10             9.280026E-03             k10              8.806718E-03
+       k11             1.600000E-02             k11              1.000000E-03
+       k12              2.20025                 k12               2.20695    
+       k13             0.136426                 k13              0.130441    
+       k14             8.808926E-03             k14              1.100000E-02
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                70.4905                 c                 70.5128    
+       c2               25.6490                 c2                25.5926    
+    Maximum relative change:  15.00     ["k11"]
+
+
+ OPTIMISATION ITERATION NO.        : 6
+    Model calls so far             : 175
+    Current regularisation weight factor                     :  2.11759E-02
+    Current value of measurement objective function          :   1626.7    
+    Current value of regularisation objective function       :  3.00709E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1761.5    
+    Contribution to phi from observation group "head"        :   1626.7    
+    Contribution to phi from observation group "regul_c"     :   106.72    
+    Contribution to phi from observation group "regul_c2"    :   28.112    
+    Contribution to phi from observation group "regul_k"     :  9.67053E-03
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   162.67    
+ 
+    Re-calculated regularisation weight factor               :  1.83369E-02
+    New starting objective function for this itn. (ie. phi)  :   1727.8    
+    Contribution to phi from observation group "head"        :   1626.7    
+    Contribution to phi from observation group "regul_c"     :   80.024    
+    Contribution to phi from observation group "regul_c2"    :   21.080    
+    Contribution to phi from observation group "regul_k"     :  7.25140E-03
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1700.2      (  0.984 of starting phi)
+     Meas. fn. =   1598.8    
+    Regul. fn. =  3.01500E+05
+
+        Lambda =   133.97     upgrade fraction =   1.0000     ----->
+           Phi =   1695.4      (  0.981 of starting phi)
+     Meas. fn. =   1594.5    
+    Regul. fn. =  3.00074E+05
+
+        Lambda =   873.31     upgrade fraction =   1.0000     ----->
+           Phi =   1704.9      (  0.987 of starting phi)
+     Meas. fn. =   1603.3    
+    Regul. fn. =  3.02159E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =   342.05     upgrade fraction =   1.0000     ----->
+           Phi =   1700.5      (  0.984 of starting phi)
+     Meas. fn. =   1599.1    
+    Regul. fn. =  3.01541E+05
+
+        Lambda =   133.97     upgrade fraction =   1.0000     ----->
+           Phi =   1695.7      (  0.981 of starting phi)
+     Meas. fn. =   1594.7    
+    Regul. fn. =  3.00135E+05
+
+        Lambda =   873.31     upgrade fraction =   1.0000     ----->
+           Phi =   1705.2      (  0.987 of starting phi)
+     Meas. fn. =   1603.6    
+    Regul. fn. =  3.02181E+05
+
+       Current parameter values                 Previous parameter values
+       k1               3.02269                 k1                3.11733    
+       k2              1.000000E-03             k2               5.420191E-03
+       k3               1.07090                 k3                1.00355    
+       k4               5.00041                 k4                4.99984    
+       k5               7.26010                 k5                6.51291    
+       k6              0.611052                 k6               0.459375    
+       k7              0.319246                 k7               0.380841    
+       k8               5.97902                 k8                5.95734    
+       k9              0.697441                 k9               0.678784    
+       k10             1.000000E-03             k10              9.280026E-03
+       k11             6.735063E-03             k11              1.600000E-02
+       k12              2.04678                 k12               2.20025    
+       k13             0.299016                 k13              0.136426    
+       k14             2.669333E-03             k14              8.808926E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                70.1407                 c                 70.4905    
+       c2               26.2361                 c2                25.6490    
+    Maximum relative change:  1.192     ["k13"]
+
+
+ OPTIMISATION ITERATION NO.        : 7
+    Model calls so far             : 217
+    Current regularisation weight factor                     :  1.83369E-02
+    Current value of measurement objective function          :   1594.5    
+    Current value of regularisation objective function       :  3.00074E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1695.4    
+    Contribution to phi from observation group "head"        :   1594.5    
+    Contribution to phi from observation group "regul_c"     :   78.199    
+    Contribution to phi from observation group "regul_c2"    :   22.691    
+    Contribution to phi from observation group "regul_k"     :  7.66818E-03
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   159.45    
+ 
+    Re-calculated regularisation weight factor               :  3.46993E-02
+    New starting objective function for this itn. (ie. phi)  :   1955.8    
+    Contribution to phi from observation group "head"        :   1594.5    
+    Contribution to phi from observation group "regul_c"     :   280.02    
+    Contribution to phi from observation group "regul_c2"    :   81.254    
+    Contribution to phi from observation group "regul_k"     :  2.74587E-02
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =   52.473     upgrade fraction =   1.0000     ----->
+           Phi =   1943.8      (  0.994 of starting phi)
+     Meas. fn. =   1585.2    
+    Regul. fn. =  2.97790E+05
+
+        Lambda =   26.236     upgrade fraction =   1.0000     ----->
+           Phi =   1941.3      (  0.993 of starting phi)
+     Meas. fn. =   1583.3    
+    Regul. fn. =  2.97312E+05
+
+        Lambda =   104.95     upgrade fraction =   1.0000     ----->
+           Phi =   1944.0      (  0.994 of starting phi)
+     Meas. fn. =   1585.2    
+    Regul. fn. =  2.97941E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =   52.473     upgrade fraction =   1.0000     ----->
+           Phi =   1944.0      (  0.994 of starting phi)
+     Meas. fn. =   1585.4    
+    Regul. fn. =  2.97842E+05
+
+        Lambda =   26.236     upgrade fraction =   1.0000     ----->
+           Phi =   1941.8      (  0.993 of starting phi)
+     Meas. fn. =   1583.7    
+    Regul. fn. =  2.97417E+05
+
+        Lambda =   104.95     upgrade fraction =   1.0000     ----->
+           Phi =   1944.1      (  0.994 of starting phi)
+     Meas. fn. =   1585.3    
+    Regul. fn. =  2.97973E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.98855                 k1                3.02269    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.12035                 k3                1.07090    
+       k4               5.01469                 k4                5.00041    
+       k5               7.84580                 k5                7.26010    
+       k6              0.714794                 k6               0.611052    
+       k7              0.223600                 k7               0.319246    
+       k8               5.99482                 k8                5.97902    
+       k9              0.711985                 k9               0.697441    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              6.735063E-03
+       k12              1.93484                 k12               2.04678    
+       k13             0.365209                 k13              0.299016    
+       k14             1.000000E-03             k14              2.669333E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                69.9039                 c                 70.1407    
+       c2               26.3413                 c2                26.2361    
+    Maximum relative change: 0.8515     ["k11"]
+
+
+ OPTIMISATION ITERATION NO.        : 8
+    Model calls so far             : 259
+    Current regularisation weight factor                     :  3.46993E-02
+    Current value of measurement objective function          :   1583.3    
+    Current value of regularisation objective function       :  2.97312E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1941.3    
+    Contribution to phi from observation group "head"        :   1583.3    
+    Contribution to phi from observation group "regul_c"     :   275.64    
+    Contribution to phi from observation group "regul_c2"    :   82.310    
+    Contribution to phi from observation group "regul_k"     :  2.99680E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   158.33    
+ 
+    Re-calculated regularisation weight factor               :  2.00694E-02
+    New starting objective function for this itn. (ie. phi)  :   1703.1    
+    Contribution to phi from observation group "head"        :   1583.3    
+    Contribution to phi from observation group "regul_c"     :   92.207    
+    Contribution to phi from observation group "regul_c2"    :   27.535    
+    Contribution to phi from observation group "regul_k"     :  1.00250E-02
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: - update vector out of bounds
+
+        Lambda =   13.118     upgrade fraction =   1.0000     ----->
+           Phi =   1690.4      (  0.993 of starting phi)
+     Meas. fn. =   1571.3    
+    Regul. fn. =  2.95631E+05
+
+        Lambda =   6.5591     upgrade fraction =   1.0000     ----->
+           Phi =   1689.5      (  0.992 of starting phi)
+     Meas. fn. =   1570.5    
+    Regul. fn. =  2.95353E+05
+
+        Lambda =   26.236     upgrade fraction =   1.0000     ----->
+           Phi =   1691.4      (  0.993 of starting phi)
+     Meas. fn. =   1572.2    
+    Regul. fn. =  2.95960E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: - update vector out of bounds
+
+        Lambda =   13.118     upgrade fraction =   1.0000     ----->
+           Phi =   1696.0      (  0.996 of starting phi)
+     Meas. fn. =   1576.5    
+    Regul. fn. =  2.96533E+05
+
+        Lambda =   6.5591     upgrade fraction =   1.0000     ----->
+           Phi =   1696.1      (  0.996 of starting phi)
+     Meas. fn. =   1576.6    
+    Regul. fn. =  2.96491E+05
+
+        Lambda =   26.236     upgrade fraction =   1.0000     ----->
+           Phi =   1695.9      (  0.996 of starting phi)
+     Meas. fn. =   1576.4    
+    Regul. fn. =  2.96608E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.97070                 k1                2.98855    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.17508                 k3                1.12035    
+       k4               5.02393                 k4                5.01469    
+       k5               8.88914                 k5                7.84580    
+       k6              0.866241                 k6               0.714794    
+       k7              0.144530                 k7               0.223600    
+       k8               5.99685                 k8                5.99482    
+       k9              0.708702                 k9               0.711985    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12              1.77669                 k12               1.93484    
+       k13             0.380576                 k13              0.365209    
+       k14             1.100000E-02             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                69.7081                 c                 69.9039    
+       c2               26.4632                 c2                26.3413    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 9
+    Model calls so far             : 301
+    Current regularisation weight factor                     :  2.00694E-02
+    Current value of measurement objective function          :   1570.5    
+    Current value of regularisation objective function       :  2.95353E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1689.5    
+    Contribution to phi from observation group "head"        :   1570.5    
+    Contribution to phi from observation group "regul_c"     :   91.003    
+    Contribution to phi from observation group "regul_c2"    :   27.947    
+    Contribution to phi from observation group "regul_k"     :  1.21526E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   157.05    
+ 
+    Re-calculated regularisation weight factor               :  1.56109E-02
+    New starting objective function for this itn. (ie. phi)  :   1642.5    
+    Contribution to phi from observation group "head"        :   1570.5    
+    Contribution to phi from observation group "regul_c"     :   55.061    
+    Contribution to phi from observation group "regul_c2"    :   16.909    
+    Contribution to phi from observation group "regul_k"     :  7.35287E-03
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =   3.2795     upgrade fraction =   1.0000     ----->
+           Phi =   1630.6      (  0.993 of starting phi)
+     Meas. fn. =   1559.0    
+    Regul. fn. =  2.93908E+05
+
+        Lambda =   1.3168     upgrade fraction =   1.0000     ----->
+           Phi =   1628.7      (  0.992 of starting phi)
+     Meas. fn. =   1557.1    
+    Regul. fn. =  2.93560E+05
+
+        Lambda =   8.1678     upgrade fraction =   1.0000     ----->
+           Phi =   1632.8      (  0.994 of starting phi)
+     Meas. fn. =   1561.1    
+    Regul. fn. =  2.94306E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =   3.2795     upgrade fraction =   1.0000     ----->
+           Phi =   1637.5      (  0.997 of starting phi)
+     Meas. fn. =   1565.7    
+    Regul. fn. =  2.94714E+05
+
+        Lambda =   1.3168     upgrade fraction =   1.0000     ----->
+           Phi =   1636.5      (  0.996 of starting phi)
+     Meas. fn. =   1564.7    
+    Regul. fn. =  2.94520E+05
+
+        Lambda =   8.1678     upgrade fraction =   1.0000     ----->
+           Phi =   1637.9      (  0.997 of starting phi)
+     Meas. fn. =   1566.0    
+    Regul. fn. =  2.94830E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.96432                 k1                2.97070    
+       k2              1.100000E-02             k2               1.000000E-03
+       k3               1.19813                 k3                1.17508    
+       k4               5.02919                 k4                5.02393    
+       k5               10.1950                 k5                8.88914    
+       k6               1.00119                 k6               0.866241    
+       k7              4.530709E-02             k7               0.144530    
+       k8               5.89716                 k8                5.99685    
+       k9              0.572528                 k9               0.708702    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             3.928585E-03             k11              1.000000E-03
+       k12              1.66625                 k12               1.77669    
+       k13             0.228738                 k13              0.380576    
+       k14             1.000000E-03             k14              1.100000E-02
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                69.5166                 c                 69.7081    
+       c2               26.5931                 c2                26.4632    
+    Maximum relative change:  10.00     ["k2"]
+
+
+ OPTIMISATION ITERATION NO.        : 10
+    Model calls so far             : 343
+    Current regularisation weight factor                     :  1.56109E-02
+    Current value of measurement objective function          :   1557.1    
+    Current value of regularisation objective function       :  2.93560E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1628.7    
+    Contribution to phi from observation group "head"        :   1557.1    
+    Contribution to phi from observation group "regul_c"     :   54.354    
+    Contribution to phi from observation group "regul_c2"    :   17.177    
+    Contribution to phi from observation group "regul_k"     :  9.66895E-03
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   155.71    
+ 
+    Re-calculated regularisation weight factor               :  3.07249E-02
+    New starting objective function for this itn. (ie. phi)  :   1834.3    
+    Contribution to phi from observation group "head"        :   1557.1    
+    Contribution to phi from observation group "regul_c"     :   210.55    
+    Contribution to phi from observation group "regul_c2"    :   66.539    
+    Contribution to phi from observation group "regul_k"     :  3.74544E-02
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  0.52872     upgrade fraction =   1.0000     ----->
+           Phi =   1833.7      (  1.000 of starting phi)
+     Meas. fn. =   1556.7    
+    Regul. fn. =  2.93420E+05
+
+        Lambda =  0.11587     upgrade fraction =   1.0000     ----->
+           Phi =   1833.7      (  1.000 of starting phi)
+     Meas. fn. =   1556.7    
+    Regul. fn. =  2.93419E+05
+
+        Lambda =   2.4125     upgrade fraction =   1.0000     ----->
+           Phi =   1833.7      (  1.000 of starting phi)
+     Meas. fn. =   1556.7    
+    Regul. fn. =  2.93423E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  0.52872     upgrade fraction =   1.0000     ----->
+           Phi =   1834.0      (  1.000 of starting phi)
+     Meas. fn. =   1557.0    
+    Regul. fn. =  2.93500E+05
+
+        Lambda =  0.11587     upgrade fraction =   1.0000     ----->
+           Phi =   1834.0      (  1.000 of starting phi)
+     Meas. fn. =   1557.0    
+    Regul. fn. =  2.93502E+05
+
+        Lambda =   2.4125     upgrade fraction =   1.0000     ----->
+           Phi =   1834.0      (  1.000 of starting phi)
+     Meas. fn. =   1557.0    
+    Regul. fn. =  2.93493E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.96243                 k1                2.96432    
+       k2              9.486021E-03             k2               1.100000E-02
+       k3               1.20528                 k3                1.19813    
+       k4               5.02937                 k4                5.02919    
+       k5               10.2728                 k5                10.1950    
+       k6              0.996667                 k6                1.00119    
+       k7              4.155614E-02             k7               4.530709E-02
+       k8               5.89868                 k8                5.89716    
+       k9              0.573064                 k9               0.572528    
+       k10             1.100000E-02             k10              1.000000E-03
+       k11             6.442232E-03             k11              3.928585E-03
+       k12              1.66762                 k12               1.66625    
+       k13             0.251942                 k13              0.228738    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                69.5084                 c                 69.5166    
+       c2               26.5912                 c2                26.5931    
+    Maximum relative change:  10.00     ["k10"]
+
+
+ OPTIMISATION ITERATION NO.        : 11
+    Model calls so far             : 385
+    Current regularisation weight factor                     :  3.07249E-02
+    Current value of measurement objective function          :   1556.7    
+    Current value of regularisation objective function       :  2.93419E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1833.7    
+    Contribution to phi from observation group "head"        :   1556.7    
+    Contribution to phi from observation group "regul_c"     :   210.43    
+    Contribution to phi from observation group "regul_c2"    :   66.524    
+    Contribution to phi from observation group "regul_k"     :  3.80636E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   155.67    
+ 
+    Re-calculated regularisation weight factor               :  1.55101E-02
+    New starting objective function for this itn. (ie. phi)  :   1627.3    
+    Contribution to phi from observation group "head"        :   1556.7    
+    Contribution to phi from observation group "regul_c"     :   53.624    
+    Contribution to phi from observation group "regul_c2"    :   16.952    
+    Contribution to phi from observation group "regul_k"     :  9.69967E-03
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1623.2      (  0.997 of starting phi)
+     Meas. fn. =   1552.7    
+    Regul. fn. =  2.92979E+05
+
+        Lambda =  2.02318E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1623.2      (  0.997 of starting phi)
+     Meas. fn. =   1552.7    
+    Regul. fn. =  2.92979E+05
+
+        Lambda =  0.31874     upgrade fraction =   1.0000     ----->
+           Phi =   1623.1      (  0.997 of starting phi)
+     Meas. fn. =   1552.7    
+    Regul. fn. =  2.92982E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1624.2      (  0.998 of starting phi)
+     Meas. fn. =   1553.7    
+    Regul. fn. =  2.93079E+05
+
+        Lambda =  2.02318E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1624.2      (  0.998 of starting phi)
+     Meas. fn. =   1553.7    
+    Regul. fn. =  2.93079E+05
+
+        Lambda =  0.31874     upgrade fraction =   1.0000     ----->
+           Phi =   1624.1      (  0.998 of starting phi)
+     Meas. fn. =   1553.6    
+    Regul. fn. =  2.93078E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.95671                 k1                2.96243    
+       k2              1.221743E-02             k2               9.486021E-03
+       k3               1.21430                 k3                1.20528    
+       k4               5.02789                 k4                5.02937    
+       k5               10.6807                 k5                10.2728    
+       k6               1.04847                 k6               0.996667    
+       k7              1.000000E-03             k7               4.155614E-02
+       k8               5.83520                 k8                5.89868    
+       k9              0.494059                 k9               0.573064    
+       k10             1.000000E-03             k10              1.100000E-02
+       k11             7.086455E-02             k11              6.442232E-03
+       k12              1.62486                 k12               1.66762    
+       k13             0.252471                 k13              0.251942    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                69.4508                 c                 69.5084    
+       c2               26.6415                 c2                26.5912    
+    Maximum relative change:  10.00     ["k11"]
+
+
+ OPTIMISATION ITERATION NO.        : 12
+    Model calls so far             : 427
+    Current regularisation weight factor                     :  1.55101E-02
+    Current value of measurement objective function          :   1552.7    
+    Current value of regularisation objective function       :  2.92982E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1623.1    
+    Contribution to phi from observation group "head"        :   1552.7    
+    Contribution to phi from observation group "regul_c"     :   53.415    
+    Contribution to phi from observation group "regul_c2"    :   17.055    
+    Contribution to phi from observation group "regul_k"     :  1.05707E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   155.27    
+ 
+    Re-calculated regularisation weight factor               :  1.81703E-02
+    New starting objective function for this itn. (ie. phi)  :   1649.4    
+    Contribution to phi from observation group "head"        :   1552.7    
+    Contribution to phi from observation group "regul_c"     :   73.309    
+    Contribution to phi from observation group "regul_c2"    :   23.407    
+    Contribution to phi from observation group "regul_k"     :  1.45076E-02
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: - update vector out of bounds
+        param "k7" frozen: - update vector out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1645.4      (  0.998 of starting phi)
+     Meas. fn. =   1548.9    
+    Regul. fn. =  2.92447E+05
+
+        Lambda =  2.02494E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1645.4      (  0.998 of starting phi)
+     Meas. fn. =   1548.9    
+    Regul. fn. =  2.92446E+05
+
+        Lambda =  0.31847     upgrade fraction =   1.0000     ----->
+           Phi =   1645.4      (  0.998 of starting phi)
+     Meas. fn. =   1548.9    
+    Regul. fn. =  2.92449E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: - update vector out of bounds
+        param "k7" frozen: - update vector out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1647.0      (  0.999 of starting phi)
+     Meas. fn. =   1550.3    
+    Regul. fn. =  2.92708E+05
+
+        Lambda =  2.02494E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1647.0      (  0.999 of starting phi)
+     Meas. fn. =   1550.4    
+    Regul. fn. =  2.92709E+05
+
+        Lambda =  0.31847     upgrade fraction =   1.0000     ----->
+           Phi =   1646.9      (  0.998 of starting phi)
+     Meas. fn. =   1550.2    
+    Regul. fn. =  2.92704E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.94625                 k1                2.95671    
+       k2              4.354181E-03             k2               1.221743E-02
+       k3               1.23001                 k3                1.21430    
+       k4               5.03073                 k4                5.02789    
+       k5               11.0600                 k5                10.6807    
+       k6               1.08376                 k6                1.04847    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.79692                 k8                5.83520    
+       k9              0.458092                 k9               0.494059    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             6.690187E-02             k11              7.086455E-02
+       k12              1.38234                 k12               1.62486    
+       k13             0.327036                 k13              0.252471    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             2.800000E-02             k16              1.000000E-03
+       c                69.3930                 c                 69.4508    
+       c2               26.6807                 c2                26.6415    
+    Maximum relative change:  27.00     ["k16"]
+
+
+ OPTIMISATION ITERATION NO.        : 13
+    Model calls so far             : 469
+    Current regularisation weight factor                     :  1.81703E-02
+    Current value of measurement objective function          :   1548.9    
+    Current value of regularisation objective function       :  2.92449E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1645.4    
+    Contribution to phi from observation group "head"        :   1548.9    
+    Contribution to phi from observation group "regul_c"     :   73.021    
+    Contribution to phi from observation group "regul_c2"    :   23.517    
+    Contribution to phi from observation group "regul_k"     :  1.58756E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   154.89    
+ 
+    Re-calculated regularisation weight factor               :  4.95435E-02
+    New starting objective function for this itn. (ie. phi)  :   2266.7    
+    Contribution to phi from observation group "head"        :   1548.9    
+    Contribution to phi from observation group "regul_c"     :   542.87    
+    Contribution to phi from observation group "regul_c2"    :   174.84    
+    Contribution to phi from observation group "regul_k"     :  0.11803    
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   2261.2      (  0.998 of starting phi)
+     Meas. fn. =   1547.3    
+    Regul. fn. =  2.90841E+05
+
+        Lambda =  2.02659E-03 upgrade fraction =   1.0000     ----->
+           Phi =   2261.2      (  0.998 of starting phi)
+     Meas. fn. =   1547.3    
+    Regul. fn. =  2.90840E+05
+
+        Lambda =  0.31821     upgrade fraction =   1.0000     ----->
+           Phi =   2261.2      (  0.998 of starting phi)
+     Meas. fn. =   1547.3    
+    Regul. fn. =  2.90851E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.53943E-02 upgrade fraction =   1.0000     ----->
+           Phi =   2263.4      (  0.999 of starting phi)
+     Meas. fn. =   1548.3    
+    Regul. fn. =  2.91310E+05
+
+        Lambda =  2.02659E-03 upgrade fraction =   1.0000     ----->
+           Phi =   2263.4      (  0.999 of starting phi)
+     Meas. fn. =   1548.3    
+    Regul. fn. =  2.91302E+05
+
+        Lambda =  0.31821     upgrade fraction =   1.0000     ----->
+           Phi =   2263.5      (  0.999 of starting phi)
+     Meas. fn. =   1548.3    
+    Regul. fn. =  2.91378E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.90625                 k1                2.94625    
+       k2              1.000000E-03             k2               4.354181E-03
+       k3               1.34093                 k3                1.23001    
+       k4               5.03155                 k4                5.03073    
+       k5               11.1883                 k5                11.0600    
+       k6              0.960758                 k6                1.08376    
+       k7              1.278220E-02             k7               1.000000E-03
+       k8               5.79537                 k8                5.79692    
+       k9              0.462610                 k9               0.458092    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              6.690187E-02
+       k12              1.46923                 k12               1.38234    
+       k13             0.392498                 k13              0.327036    
+       k14             1.100000E-02             k14              1.000000E-03
+       k15             5.516588E-03             k15              1.000000E-03
+       k16             2.202900E-02             k16              2.800000E-02
+       c                69.3066                 c                 69.3930    
+       c2               26.6440                 c2                26.6807    
+    Maximum relative change:  11.78     ["k7"]
+
+
+ OPTIMISATION ITERATION NO.        : 14
+    Model calls so far             : 511
+    Current regularisation weight factor                     :  4.95435E-02
+    Current value of measurement objective function          :   1547.3    
+    Current value of regularisation objective function       :  2.90840E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   2261.2    
+    Contribution to phi from observation group "head"        :   1547.3    
+    Contribution to phi from observation group "regul_c"     :   539.69    
+    Contribution to phi from observation group "regul_c2"    :   174.07    
+    Contribution to phi from observation group "regul_k"     :  0.12097    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   154.73    
+ 
+    Re-calculated regularisation weight factor               :  1.71447E-02
+    New starting objective function for this itn. (ie. phi)  :   1632.8    
+    Contribution to phi from observation group "head"        :   1547.3    
+    Contribution to phi from observation group "regul_c"     :   64.629    
+    Contribution to phi from observation group "regul_c2"    :   20.846    
+    Contribution to phi from observation group "regul_k"     :  1.44862E-02
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.61732E-04 upgrade fraction =   1.0000     ----->
+           Phi =   1617.9      (  0.991 of starting phi)
+     Meas. fn. =   1533.0    
+    Regul. fn. =  2.88701E+05
+
+        Lambda =  2.39325E-06 upgrade fraction =   1.0000     ----->
+           Phi =   1617.9      (  0.991 of starting phi)
+     Meas. fn. =   1533.0    
+    Regul. fn. =  2.88701E+05
+
+        Lambda =  1.09295E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1617.8      (  0.991 of starting phi)
+     Meas. fn. =   1533.0    
+    Regul. fn. =  2.88701E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.61732E-04 upgrade fraction =   1.0000     ----->
+           Phi =   1615.8      (  0.990 of starting phi)
+     Meas. fn. =   1531.0    
+    Regul. fn. =  2.88626E+05
+
+        Lambda =  2.39325E-06 upgrade fraction =   1.0000     ----->
+           Phi =   1615.8      (  0.990 of starting phi)
+     Meas. fn. =   1531.0    
+    Regul. fn. =  2.88626E+05
+
+        Lambda =  1.09295E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1615.8      (  0.990 of starting phi)
+     Meas. fn. =   1530.9    
+    Regul. fn. =  2.88626E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.87523                 k1                2.90625    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.23638                 k3                1.34093    
+       k4               5.03120                 k4                5.03155    
+       k5               13.2960                 k5                11.1883    
+       k6               1.44942                 k6               0.960758    
+       k7              0.140604                 k7               1.278220E-02
+       k8               5.73419                 k8                5.79537    
+       k9              0.326244                 k9               0.462610    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             3.644076E-03             k11              1.000000E-03
+       k12             0.304778                 k12               1.46923    
+       k13             0.374935                 k13              0.392498    
+       k14             1.000000E-03             k14              1.100000E-02
+       k15             1.000000E-03             k15              5.516588E-03
+       k16             0.138052                 k16              2.202900E-02
+       c                69.0641                 c                 69.3066    
+       c2               26.8051                 c2                26.6440    
+    Maximum relative change:  10.00     ["k7"]
+
+
+ OPTIMISATION ITERATION NO.        : 15
+    Model calls so far             : 553
+    Current regularisation weight factor                     :  1.71447E-02
+    Current value of measurement objective function          :   1530.9    
+    Current value of regularisation objective function       :  2.88626E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1615.8    
+    Contribution to phi from observation group "head"        :   1530.9    
+    Contribution to phi from observation group "regul_c"     :   63.564    
+    Contribution to phi from observation group "regul_c2"    :   21.251    
+    Contribution to phi from observation group "regul_k"     :  2.31722E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   153.09    
+ 
+    Re-calculated regularisation weight factor               :  1.90025E-02
+    New starting objective function for this itn. (ie. phi)  :   1635.2    
+    Contribution to phi from observation group "head"        :   1530.9    
+    Contribution to phi from observation group "regul_c"     :   78.087    
+    Contribution to phi from observation group "regul_c2"    :   26.106    
+    Contribution to phi from observation group "regul_k"     :  2.84662E-02
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.61732E-04 upgrade fraction =   1.0000     ----->
+           Phi =   1631.3      (  0.998 of starting phi)
+     Meas. fn. =   1527.3    
+    Regul. fn. =  2.88213E+05
+
+        Lambda =  2.40175E-06 upgrade fraction =   1.0000     ----->
+           Phi =   1631.3      (  0.998 of starting phi)
+     Meas. fn. =   1527.3    
+    Regul. fn. =  2.88213E+05
+
+        Lambda =  1.08909E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1631.3      (  0.998 of starting phi)
+     Meas. fn. =   1527.3    
+    Regul. fn. =  2.88214E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.61732E-04 upgrade fraction =   1.0000     ----->
+           Phi =   1631.9      (  0.998 of starting phi)
+     Meas. fn. =   1527.8    
+    Regul. fn. =  2.88293E+05
+
+        Lambda =  2.40175E-06 upgrade fraction =   1.0000     ----->
+           Phi =   1631.9      (  0.998 of starting phi)
+     Meas. fn. =   1527.8    
+    Regul. fn. =  2.88293E+05
+
+        Lambda =  1.08909E-02 upgrade fraction =   1.0000     ----->
+           Phi =   1631.9      (  0.998 of starting phi)
+     Meas. fn. =   1527.8    
+    Regul. fn. =  2.88294E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.86946                 k1                2.87523    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.25352                 k3                1.23638    
+       k4               5.03327                 k4                5.03120    
+       k5               13.7347                 k5                13.2960    
+       k6               1.45971                 k6                1.44942    
+       k7              7.086399E-02             k7               0.140604    
+       k8               5.71783                 k8                5.73419    
+       k9              0.314746                 k9               0.326244    
+       k10             3.166091E-03             k10              1.000000E-03
+       k11             4.008483E-02             k11              3.644076E-03
+       k12             0.346171                 k12              0.304778    
+       k13             0.518791                 k13              0.374935    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.130452                 k16              0.138052    
+       c                69.0190                 c                 69.0641    
+       c2               26.8344                 c2                26.8051    
+    Maximum relative change:  10.00     ["k11"]
+
+
+ OPTIMISATION ITERATION NO.        : 16
+    Model calls so far             : 595
+    Current regularisation weight factor                     :  1.90025E-02
+    Current value of measurement objective function          :   1527.3    
+    Current value of regularisation objective function       :  2.88213E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1631.3    
+    Contribution to phi from observation group "head"        :   1527.3    
+    Contribution to phi from observation group "regul_c"     :   77.844    
+    Contribution to phi from observation group "regul_c2"    :   26.197    
+    Contribution to phi from observation group "regul_k"     :  3.08561E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   152.73    
+ 
+    Re-calculated regularisation weight factor               :  1.84828E-02
+    New starting objective function for this itn. (ie. phi)  :   1625.7    
+    Contribution to phi from observation group "head"        :   1527.3    
+    Contribution to phi from observation group "regul_c"     :   73.645    
+    Contribution to phi from observation group "regul_c2"    :   24.784    
+    Contribution to phi from observation group "regul_k"     :  2.91915E-02
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.56664E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1613.7      (  0.993 of starting phi)
+     Meas. fn. =   1515.7    
+    Regul. fn. =  2.86887E+05
+
+        Lambda =  3.20255E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1613.7      (  0.993 of starting phi)
+     Meas. fn. =   1515.7    
+    Regul. fn. =  2.86887E+05
+
+        Lambda =  3.97213E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1613.7      (  0.993 of starting phi)
+     Meas. fn. =   1515.7    
+    Regul. fn. =  2.86887E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.56664E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1604.6      (  0.987 of starting phi)
+     Meas. fn. =   1507.0    
+    Regul. fn. =  2.85701E+05
+
+        Lambda =  3.20255E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1604.6      (  0.987 of starting phi)
+     Meas. fn. =   1507.0    
+    Regul. fn. =  2.85701E+05
+
+        Lambda =  3.97213E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1604.6      (  0.987 of starting phi)
+     Meas. fn. =   1507.0    
+    Regul. fn. =  2.85701E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.83184                 k1                2.86946    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.29551                 k3                1.25352    
+       k4               5.04452                 k4                5.03327    
+       k5               16.3477                 k5                13.7347    
+       k6               1.64354                 k6                1.45971    
+       k7              1.000000E-03             k7               7.086399E-02
+       k8               5.59224                 k8                5.71783    
+       k9              0.344963                 k9               0.314746    
+       k10             1.000000E-03             k10              3.166091E-03
+       k11             9.811599E-02             k11              4.008483E-02
+       k12             7.903292E-02             k12              0.346171    
+       k13              2.00910                 k13              0.518791    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.146996                 k16              0.130452    
+       c                68.7534                 c                 69.0190    
+       c2               26.9919                 c2                26.8344    
+    Maximum relative change:  2.873     ["k13"]
+
+
+ OPTIMISATION ITERATION NO.        : 17
+    Model calls so far             : 637
+    Current regularisation weight factor                     :  1.84828E-02
+    Current value of measurement objective function          :   1507.0    
+    Current value of regularisation objective function       :  2.85701E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1604.6    
+    Contribution to phi from observation group "head"        :   1507.0    
+    Contribution to phi from observation group "regul_c"     :   72.303    
+    Contribution to phi from observation group "regul_c2"    :   25.250    
+    Contribution to phi from observation group "regul_k"     :  4.70214E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   150.70    
+ 
+    Re-calculated regularisation weight factor               :  2.85187E-02
+    New starting objective function for this itn. (ie. phi)  :   1739.3    
+    Contribution to phi from observation group "head"        :   1507.0    
+    Contribution to phi from observation group "regul_c"     :   172.14    
+    Contribution to phi from observation group "regul_c2"    :   60.115    
+    Contribution to phi from observation group "regul_k"     :  0.11195    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.20255E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1734.0      (  0.997 of starting phi)
+     Meas. fn. =   1503.0    
+    Regul. fn. =  2.84053E+05
+
+        Lambda =  4.86115E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1734.0      (  0.997 of starting phi)
+     Meas. fn. =   1503.0    
+    Regul. fn. =  2.84053E+05
+
+        Lambda =  3.68053E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1734.0      (  0.997 of starting phi)
+     Meas. fn. =   1503.0    
+    Regul. fn. =  2.84053E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.20255E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1737.6      (  0.999 of starting phi)
+     Meas. fn. =   1505.7    
+    Regul. fn. =  2.85107E+05
+
+        Lambda =  4.86115E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1737.6      (  0.999 of starting phi)
+     Meas. fn. =   1505.7    
+    Regul. fn. =  2.85107E+05
+
+        Lambda =  3.68053E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1737.6      (  0.999 of starting phi)
+     Meas. fn. =   1505.7    
+    Regul. fn. =  2.85107E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.81166                 k1                2.83184    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.20729                 k3                1.29551    
+       k4               5.07018                 k4                5.04452    
+       k5               17.3990                 k5                16.3477    
+       k6               1.88497                 k6                1.64354    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.64446                 k8                5.59224    
+       k9              0.390604                 k9               0.344963    
+       k10             8.724498E-03             k10              1.000000E-03
+       k11             4.957366E-02             k11              9.811599E-02
+       k12             1.000000E-03             k12              7.903292E-02
+       k13              2.88412                 k13               2.00910    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.238007                 k16              0.146996    
+       c                68.6430                 c                 68.7534    
+       c2               26.9859                 c2                26.9919    
+    Maximum relative change:  7.724     ["k10"]
+
+
+ OPTIMISATION ITERATION NO.        : 18
+    Model calls so far             : 679
+    Current regularisation weight factor                     :  2.85187E-02
+    Current value of measurement objective function          :   1503.0    
+    Current value of regularisation objective function       :  2.84053E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1734.0    
+    Contribution to phi from observation group "head"        :   1503.0    
+    Contribution to phi from observation group "regul_c"     :   170.82    
+    Contribution to phi from observation group "regul_c2"    :   60.072    
+    Contribution to phi from observation group "regul_k"     :  0.13414    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   150.30    
+ 
+    Re-calculated regularisation weight factor               :  2.78568E-02
+    New starting objective function for this itn. (ie. phi)  :   1723.4    
+    Contribution to phi from observation group "head"        :   1503.0    
+    Contribution to phi from observation group "regul_c"     :   162.98    
+    Contribution to phi from observation group "regul_c2"    :   57.316    
+    Contribution to phi from observation group "regul_k"     :  0.12799    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.84831E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1721.2      (  0.999 of starting phi)
+     Meas. fn. =   1501.1    
+    Regul. fn. =  2.83531E+05
+
+        Lambda =  2.25039E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1721.2      (  0.999 of starting phi)
+     Meas. fn. =   1501.1    
+    Regul. fn. =  2.83531E+05
+
+        Lambda =  1.04454E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1721.2      (  0.999 of starting phi)
+     Meas. fn. =   1501.1    
+    Regul. fn. =  2.83531E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.84831E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1722.8      (  1.000 of starting phi)
+     Meas. fn. =   1502.5    
+    Regul. fn. =  2.83921E+05
+
+        Lambda =  2.25039E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1722.8      (  1.000 of starting phi)
+     Meas. fn. =   1502.5    
+    Regul. fn. =  2.83921E+05
+
+        Lambda =  1.04454E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1722.8      (  1.000 of starting phi)
+     Meas. fn. =   1502.5    
+    Regul. fn. =  2.83921E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.80938                 k1                2.81166    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.21741                 k3                1.20729    
+       k4               5.07050                 k4                5.07018    
+       k5               17.7458                 k5                17.3990    
+       k6               1.89425                 k6                1.88497    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.67026                 k8                5.64446    
+       k9              0.402835                 k9               0.390604    
+       k10             1.000000E-03             k10              8.724498E-03
+       k11             3.782441E-02             k11              4.957366E-02
+       k12             2.680535E-02             k12              1.000000E-03
+       k13              3.12791                 k13               2.88412    
+       k14             3.528142E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.232866                 k16              0.238007    
+       c                68.6106                 c                 68.6430    
+       c2               26.9794                 c2                26.9859    
+    Maximum relative change:  25.81     ["k12"]
+
+
+ OPTIMISATION ITERATION NO.        : 19
+    Model calls so far             : 721
+    Current regularisation weight factor                     :  2.78568E-02
+    Current value of measurement objective function          :   1501.1    
+    Current value of regularisation objective function       :  2.83531E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1721.2    
+    Contribution to phi from observation group "head"        :   1501.1    
+    Contribution to phi from observation group "regul_c"     :   162.61    
+    Contribution to phi from observation group "regul_c2"    :   57.272    
+    Contribution to phi from observation group "regul_k"     :  0.13527    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   150.11    
+ 
+    Re-calculated regularisation weight factor               :  2.96839E-02
+    New starting objective function for this itn. (ie. phi)  :   1751.0    
+    Contribution to phi from observation group "head"        :   1501.1    
+    Contribution to phi from observation group "regul_c"     :   184.64    
+    Contribution to phi from observation group "regul_c2"    :   65.032    
+    Contribution to phi from observation group "regul_k"     :  0.15359    
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.84239E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1746.1      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82430E+05
+
+        Lambda =  2.24764E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1746.1      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82430E+05
+
+        Lambda =  1.04326E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1746.1      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82430E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.84239E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1746.2      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82435E+05
+
+        Lambda =  2.24764E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1746.2      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82435E+05
+
+        Lambda =  1.04326E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1746.2      (  0.997 of starting phi)
+     Meas. fn. =   1497.3    
+    Regul. fn. =  2.82435E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.80389                 k1                2.80938    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.17466                 k3                1.21741    
+       k4               5.07013                 k4                5.07050    
+       k5               18.3343                 k5                17.7458    
+       k6               2.08634                 k6                1.89425    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.71179                 k8                5.67026    
+       k9              0.417071                 k9               0.402835    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             7.012884E-03             k11              3.782441E-02
+       k12             2.723615E-02             k12              2.680535E-02
+       k13              3.66663                 k13               3.12791    
+       k14             1.000000E-03             k14              3.528142E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.222011                 k16              0.232866    
+       c                68.5410                 c                 68.6106    
+       c2               26.9677                 c2                26.9794    
+    Maximum relative change: 0.8146     ["k11"]
+
+
+ OPTIMISATION ITERATION NO.        : 20
+    Model calls so far             : 763
+    Current regularisation weight factor                     :  2.96839E-02
+    Current value of measurement objective function          :   1497.3    
+    Current value of regularisation objective function       :  2.82430E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1746.1    
+    Contribution to phi from observation group "head"        :   1497.3    
+    Contribution to phi from observation group "regul_c"     :   183.75    
+    Contribution to phi from observation group "regul_c2"    :   64.942    
+    Contribution to phi from observation group "regul_k"     :  0.16963    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   149.73    
+ 
+    Re-calculated regularisation weight factor               :  2.37292E-02
+    New starting objective function for this itn. (ie. phi)  :   1656.3    
+    Contribution to phi from observation group "head"        :   1497.3    
+    Contribution to phi from observation group "regul_c"     :   117.42    
+    Contribution to phi from observation group "regul_c2"    :   41.500    
+    Contribution to phi from observation group "regul_k"     :  0.10840    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.82989E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1645.9      (  0.994 of starting phi)
+     Meas. fn. =   1487.8    
+    Regul. fn. =  2.80772E+05
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1645.9      (  0.994 of starting phi)
+     Meas. fn. =   1487.8    
+    Regul. fn. =  2.80772E+05
+
+        Lambda =  1.04057E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1645.9      (  0.994 of starting phi)
+     Meas. fn. =   1487.8    
+    Regul. fn. =  2.80770E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+
+        Lambda =  4.82989E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1646.7      (  0.994 of starting phi)
+     Meas. fn. =   1488.6    
+    Regul. fn. =  2.80864E+05
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1646.7      (  0.994 of starting phi)
+     Meas. fn. =   1488.6    
+    Regul. fn. =  2.80864E+05
+
+        Lambda =  1.04057E-03 upgrade fraction =   1.0000     ----->
+           Phi =   1646.7      (  0.994 of starting phi)
+     Meas. fn. =   1488.6    
+    Regul. fn. =  2.80862E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.78866                 k1                2.80389    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.28172                 k3                1.17466    
+       k4               5.17028                 k4                5.07013    
+       k5               19.6192                 k5                18.3343    
+       k6               2.05482                 k6                2.08634    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.79482                 k8                5.71179    
+       k9              0.454721                 k9               0.417071    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              7.012884E-03
+       k12             0.299598                 k12              2.723615E-02
+       k13              5.02749                 k13               3.66663    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.181550                 k16              0.222011    
+       c                68.4216                 c                 68.5410    
+       c2               26.9721                 c2                26.9677    
+    Maximum relative change:  10.00     ["k12"]
+
+
+ OPTIMISATION ITERATION NO.        : 21
+    Model calls so far             : 805
+    Current regularisation weight factor                     :  2.37292E-02
+    Current value of measurement objective function          :   1487.8    
+    Current value of regularisation objective function       :  2.80770E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1645.9    
+    Contribution to phi from observation group "head"        :   1487.8    
+    Contribution to phi from observation group "regul_c"     :   116.44    
+    Contribution to phi from observation group "regul_c2"    :   41.522    
+    Contribution to phi from observation group "regul_k"     :  0.13299    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   148.78    
+ 
+    Re-calculated regularisation weight factor               :  2.73724E-02
+    New starting objective function for this itn. (ie. phi)  :   1698.2    
+    Contribution to phi from observation group "head"        :   1487.8    
+    Contribution to phi from observation group "regul_c"     :   154.94    
+    Contribution to phi from observation group "regul_c2"    :   55.251    
+    Contribution to phi from observation group "regul_k"     :  0.17697    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: - update vector out of bounds
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1688.6      (  0.994 of starting phi)
+     Meas. fn. =   1479.5    
+    Regul. fn. =  2.79066E+05
+
+        Lambda =  1.73944E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1688.6      (  0.994 of starting phi)
+     Meas. fn. =   1479.5    
+    Regul. fn. =  2.79066E+05
+
+        Lambda =  2.88933E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1688.6      (  0.994 of starting phi)
+     Meas. fn. =   1479.5    
+    Regul. fn. =  2.79066E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: - update vector out of bounds
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1693.3      (  0.997 of starting phi)
+     Meas. fn. =   1483.6    
+    Regul. fn. =  2.79951E+05
+
+        Lambda =  1.73944E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1693.3      (  0.997 of starting phi)
+     Meas. fn. =   1483.6    
+    Regul. fn. =  2.79951E+05
+
+        Lambda =  2.88933E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1693.3      (  0.997 of starting phi)
+     Meas. fn. =   1483.6    
+    Regul. fn. =  2.79951E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.76612                 k1                2.78866    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.45211                 k3                1.28172    
+       k4               5.17176                 k4                5.17028    
+       k5               20.8877                 k5                19.6192    
+       k6               1.90605                 k6                2.05482    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               5.89647                 k8                5.79482    
+       k9              0.517639                 k9               0.454721    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             0.784579                 k12              0.299598    
+       k13              6.13339                 k13               5.02749    
+       k14             1.100000E-02             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.118636                 k16              0.181550    
+       c                68.3080                 c                 68.4216    
+       c2               26.9604                 c2                26.9721    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 22
+    Model calls so far             : 847
+    Current regularisation weight factor                     :  2.73724E-02
+    Current value of measurement objective function          :   1479.5    
+    Current value of regularisation objective function       :  2.79066E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1688.6    
+    Contribution to phi from observation group "head"        :   1479.5    
+    Contribution to phi from observation group "regul_c"     :   153.70    
+    Contribution to phi from observation group "regul_c2"    :   55.175    
+    Contribution to phi from observation group "regul_k"     :  0.21163    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   147.95    
+ 
+    Re-calculated regularisation weight factor               :  2.31899E-02
+    New starting objective function for this itn. (ie. phi)  :   1629.5    
+    Contribution to phi from observation group "head"        :   1479.5    
+    Contribution to phi from observation group "regul_c"     :   110.32    
+    Contribution to phi from observation group "regul_c2"    :   39.602    
+    Contribution to phi from observation group "regul_k"     :  0.15190    
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1618.6      (  0.993 of starting phi)
+     Meas. fn. =   1469.7    
+    Regul. fn. =  2.76942E+05
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1618.6      (  0.993 of starting phi)
+     Meas. fn. =   1469.7    
+    Regul. fn. =  2.76942E+05
+
+        Lambda =  2.88392E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1618.6      (  0.993 of starting phi)
+     Meas. fn. =   1469.7    
+    Regul. fn. =  2.76942E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.24184E-08 upgrade fraction =   1.0000     ----->
+           Phi =   1618.7      (  0.993 of starting phi)
+     Meas. fn. =   1469.8    
+    Regul. fn. =  2.76935E+05
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1618.7      (  0.993 of starting phi)
+     Meas. fn. =   1469.8    
+    Regul. fn. =  2.76935E+05
+
+        Lambda =  2.88392E-05 upgrade fraction =   1.0000     ----->
+           Phi =   1618.7      (  0.993 of starting phi)
+     Meas. fn. =   1469.8    
+    Regul. fn. =  2.76935E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.75255                 k1                2.76612    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               1.41411                 k3                1.45211    
+       k4               5.17120                 k4                5.17176    
+       k5               22.3045                 k5                20.8877    
+       k6               2.19075                 k6                1.90605    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               6.03654                 k8                5.89647    
+       k9              0.551408                 k9               0.517639    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             0.621741                 k12              0.784579    
+       k13              7.48072                 k13               6.13339    
+       k14             1.000000E-03             k14              1.100000E-02
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             0.122067                 k16              0.118636    
+       c                68.1675                 c                 68.3080    
+       c2               26.9424                 c2                26.9604    
+    Maximum relative change: 0.9091     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 23
+    Model calls so far             : 889
+    Current regularisation weight factor                     :  2.31899E-02
+    Current value of measurement objective function          :   1469.7    
+    Current value of regularisation objective function       :  2.76942E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1618.6    
+    Contribution to phi from observation group "head"        :   1469.7    
+    Contribution to phi from observation group "regul_c"     :   109.23    
+    Contribution to phi from observation group "regul_c2"    :   39.517    
+    Contribution to phi from observation group "regul_k"     :  0.18602    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   146.97    
+ 
+    Re-calculated regularisation weight factor               :  2.64976E-02
+    New starting objective function for this itn. (ie. phi)  :   1664.1    
+    Contribution to phi from observation group "head"        :   1469.7    
+    Contribution to phi from observation group "regul_c"     :   142.61    
+    Contribution to phi from observation group "regul_c2"    :   51.595    
+    Contribution to phi from observation group "regul_k"     :  0.24287    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: - update vector out of bounds
+        param "k11" frozen: - update vector out of bounds
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1130.0      (  0.679 of starting phi)
+     Meas. fn. =   988.48    
+    Regul. fn. =  2.01535E+05
+
+        Lambda =  4.74097E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1130.0      (  0.679 of starting phi)
+     Meas. fn. =   988.48    
+    Regul. fn. =  2.01535E+05
+
+        Lambda =  2.43279E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1130.0      (  0.679 of starting phi)
+     Meas. fn. =   988.48    
+    Regul. fn. =  2.01535E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k14" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: - update vector out of bounds
+        param "k11" frozen: - update vector out of bounds
+        param "k10" frozen: - update vector out of bounds
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1093.4      (  0.657 of starting phi)
+     Meas. fn. =   954.35    
+    Regul. fn. =  1.98104E+05
+
+        Lambda =  4.74097E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1093.4      (  0.657 of starting phi)
+     Meas. fn. =   954.35    
+    Regul. fn. =  1.98104E+05
+
+        Lambda =  2.43279E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1093.4      (  0.657 of starting phi)
+     Meas. fn. =   954.35    
+    Regul. fn. =  1.98104E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.34207                 k1                2.75255    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               8.04615                 k3                1.41411    
+       k4               5.59052                 k4                5.17120    
+       k5               117.054                 k5                22.3045    
+       k6               4.06240                 k6                2.19075    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               15.4789                 k8                6.03654    
+       k9               6.06548                 k9               0.551408    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              0.621741    
+       k13              78.9414                 k13               7.48072    
+       k14             1.000000E-03             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              0.122067    
+       c                60.7021                 c                 68.1675    
+       c2               26.4921                 c2                26.9424    
+    Maximum relative change:  10.00     ["k9"]
+
+
+ OPTIMISATION ITERATION NO.        : 24
+    Model calls so far             : 931
+    Current regularisation weight factor                     :  2.64976E-02
+    Current value of measurement objective function          :   954.35    
+    Current value of regularisation objective function       :  1.98104E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1093.4    
+    Contribution to phi from observation group "head"        :   954.35    
+    Contribution to phi from observation group "regul_c"     :   77.034    
+    Contribution to phi from observation group "regul_c2"    :   48.888    
+    Contribution to phi from observation group "regul_k"     :   13.172    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   95.435    
+ 
+    Re-calculated regularisation weight factor               :  1.94270E-02
+    New starting objective function for this itn. (ie. phi)  :   1029.1    
+    Contribution to phi from observation group "head"        :   954.35    
+    Contribution to phi from observation group "regul_c"     :   41.407    
+    Contribution to phi from observation group "regul_c2"    :   26.279    
+    Contribution to phi from observation group "regul_k"     :   7.0801    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1018.8      (  0.990 of starting phi)
+     Meas. fn. =   944.55    
+    Regul. fn. =  1.96760E+05
+
+        Lambda =  3.07856E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1018.8      (  0.990 of starting phi)
+     Meas. fn. =   944.55    
+    Regul. fn. =  1.96760E+05
+
+        Lambda =  2.10668E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1018.8      (  0.990 of starting phi)
+     Meas. fn. =   944.55    
+    Regul. fn. =  1.96760E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.74271E-11 upgrade fraction =   1.0000     ----->
+           Phi =   1021.5      (  0.993 of starting phi)
+     Meas. fn. =   947.07    
+    Regul. fn. =  1.97110E+05
+
+        Lambda =  3.07856E-13 upgrade fraction =   1.0000     ----->
+           Phi =   1021.5      (  0.993 of starting phi)
+     Meas. fn. =   947.07    
+    Regul. fn. =  1.97110E+05
+
+        Lambda =  2.10668E-07 upgrade fraction =   1.0000     ----->
+           Phi =   1021.5      (  0.993 of starting phi)
+     Meas. fn. =   947.07    
+    Regul. fn. =  1.97110E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.32821                 k1                2.34207    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               8.15080                 k3                8.04615    
+       k4               5.63291                 k4                5.59052    
+       k5               119.363                 k5                117.054    
+       k6               4.01003                 k6                4.06240    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               15.8891                 k8                15.4789    
+       k9               6.25949                 k9                6.06548    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              79.6726                 k13               78.9414    
+       k14             1.100000E-02             k14              1.000000E-03
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                60.5165                 c                 60.7021    
+       c2               26.4884                 c2                26.4921    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 25
+    Model calls so far             : 973
+    Current regularisation weight factor                     :  1.94270E-02
+    Current value of measurement objective function          :   944.55    
+    Current value of regularisation objective function       :  1.96760E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   1018.8    
+    Contribution to phi from observation group "head"        :   944.55    
+    Contribution to phi from observation group "regul_c"     :   40.668    
+    Contribution to phi from observation group "regul_c2"    :   26.267    
+    Contribution to phi from observation group "regul_k"     :   7.3238    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   94.455    
+ 
+    Re-calculated regularisation weight factor               :  8.84251E-03
+    New starting objective function for this itn. (ie. phi)  :   959.94    
+    Contribution to phi from observation group "head"        :   944.55    
+    Contribution to phi from observation group "regul_c"     :   8.4255    
+    Contribution to phi from observation group "regul_c2"    :   5.4419    
+    Contribution to phi from observation group "regul_k"     :   1.5173    
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.04695E-13 upgrade fraction =   1.0000     ----->
+           Phi =   818.07      (  0.852 of starting phi)
+     Meas. fn. =   803.94    
+    Regul. fn. =  1.80712E+05
+
+        Lambda =  1.41427E-08 upgrade fraction =   1.0000     ----->
+           Phi =   818.07      (  0.852 of starting phi)
+     Meas. fn. =   803.94    
+    Regul. fn. =  1.80712E+05
+
+        Lambda =  6.56445E-04 upgrade fraction =   1.0000     ----->
+           Phi =   818.09      (  0.852 of starting phi)
+     Meas. fn. =   803.96    
+    Regul. fn. =  1.80715E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =  3.04695E-13 upgrade fraction =   1.0000     ----->
+           Phi =   840.27      (  0.875 of starting phi)
+     Meas. fn. =   826.02    
+    Regul. fn. =  1.82350E+05
+
+        Lambda =  1.41427E-08 upgrade fraction =   1.0000     ----->
+           Phi =   840.27      (  0.875 of starting phi)
+     Meas. fn. =   826.02    
+    Regul. fn. =  1.82350E+05
+
+        Lambda =  6.56445E-04 upgrade fraction =   1.0000     ----->
+           Phi =   840.28      (  0.875 of starting phi)
+     Meas. fn. =   826.03    
+    Regul. fn. =  1.82352E+05
+
+       Current parameter values                 Previous parameter values
+       k1               2.14435                 k1                2.32821    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               8.95204                 k3                8.15080    
+       k4               9.50975                 k4                5.63291    
+       k5               151.680                 k5                119.363    
+       k6               3.71409                 k6                4.01003    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               31.3444                 k8                15.8891    
+       k9               9.31126                 k9                6.25949    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              86.2412                 k13               79.6726    
+       k14             0.121000                 k14              1.100000E-02
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                57.5889                 c                 60.5165    
+       c2               26.7736                 c2                26.4884    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 26
+    Model calls so far             : 1015
+    Current regularisation weight factor                     :  8.84251E-03
+    Current value of measurement objective function          :   803.94    
+    Current value of regularisation objective function       :  1.80712E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   818.07    
+    Contribution to phi from observation group "head"        :   803.94    
+    Contribution to phi from observation group "regul_c"     :   6.1925    
+    Contribution to phi from observation group "regul_c2"    :   5.6318    
+    Contribution to phi from observation group "regul_k"     :   2.3055    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   80.394    
+ 
+    Re-calculated regularisation weight factor               :  2.73776E-03
+    New starting objective function for this itn. (ie. phi)  :   805.29    
+    Contribution to phi from observation group "head"        :   803.94    
+    Contribution to phi from observation group "regul_c"     :  0.59362    
+    Contribution to phi from observation group "regul_c2"    :  0.53987    
+    Contribution to phi from observation group "regul_k"     :  0.22101    
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.59335E-13 upgrade fraction =   1.0000     ----->
+           Phi =   19785.      ( 24.569 times starting phi)
+     Meas. fn. =   19780.    
+    Regul. fn. =  7.16581E+05
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   19785.      ( 24.569 times starting phi)
+     Meas. fn. =   19780.    
+    Regul. fn. =  7.16581E+05
+
+        Lambda =  5.58720E-04 upgrade fraction =   1.0000     ----->
+           Phi =   19785.      ( 24.569 times starting phi)
+     Meas. fn. =   19780.    
+    Regul. fn. =  7.16582E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =  2.59335E-13 upgrade fraction =   1.0000     ----->
+           Phi =   654.42      (  0.813 of starting phi)
+     Meas. fn. =   650.37    
+    Regul. fn. =  5.39634E+05
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   654.42      (  0.813 of starting phi)
+     Meas. fn. =   650.37    
+    Regul. fn. =  5.39634E+05
+
+        Lambda =  5.58720E-04 upgrade fraction =   1.0000     ----->
+           Phi =   654.34      (  0.813 of starting phi)
+     Meas. fn. =   650.29    
+    Regul. fn. =  5.39609E+05
+
+       Current parameter values                 Previous parameter values
+       k1               1.19493                 k1                2.14435    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               6.05525                 k3                8.95204    
+       k4               8.64149                 k4                9.50975    
+       k5               27.3191                 k5                151.680    
+       k6               1.64876                 k6                3.71409    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               19.8970                 k8                31.3444    
+       k9              0.113640                 k9                9.31126    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              36.0011                 k13               86.2412    
+       k14              1.33100                 k14              0.121000    
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                41.3578                 c                 57.5889    
+       c2               55.8061                 c2                26.7736    
+    Maximum relative change:  10.00     ["k14"]
+
+
+ OPTIMISATION ITERATION NO.        : 27
+    Model calls so far             : 1057
+    Current regularisation weight factor                     :  2.73776E-03
+    Current value of measurement objective function          :   650.29    
+    Current value of regularisation objective function       :  5.39609E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   654.34    
+    Contribution to phi from observation group "head"        :   650.29    
+    Contribution to phi from observation group "regul_c"     :  3.53778E-03
+    Contribution to phi from observation group "regul_c2"    :   4.0260    
+    Contribution to phi from observation group "regul_k"     :  1.49847E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   65.029    
+ 
+    Re-calculated regularisation weight factor               :  5.05792E-03
+    New starting objective function for this itn. (ie. phi)  :   664.10    
+    Contribution to phi from observation group "head"        :   650.29    
+    Contribution to phi from observation group "regul_c"     :  1.20749E-02
+    Contribution to phi from observation group "regul_c2"    :   13.741    
+    Contribution to phi from observation group "regul_k"     :  5.11448E-02
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   562.78      (  0.847 of starting phi)
+     Meas. fn. =   549.22    
+    Regul. fn. =  5.30006E+05
+
+        Lambda =  1.00028E-11 upgrade fraction =   1.0000     ----->
+           Phi =   562.78      (  0.847 of starting phi)
+     Meas. fn. =   549.22    
+    Regul. fn. =  5.30006E+05
+
+        Lambda =  1.44855E-05 upgrade fraction =   1.0000     ----->
+           Phi =   562.78      (  0.847 of starting phi)
+     Meas. fn. =   549.22    
+    Regul. fn. =  5.30006E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k10" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   572.66      (  0.862 of starting phi)
+     Meas. fn. =   559.29    
+    Regul. fn. =  5.22666E+05
+
+        Lambda =  1.00028E-11 upgrade fraction =   1.0000     ----->
+           Phi =   572.66      (  0.862 of starting phi)
+     Meas. fn. =   559.29    
+    Regul. fn. =  5.22666E+05
+
+        Lambda =  1.44855E-05 upgrade fraction =   1.0000     ----->
+           Phi =   572.66      (  0.862 of starting phi)
+     Meas. fn. =   559.29    
+    Regul. fn. =  5.22666E+05
+
+       Current parameter values                 Previous parameter values
+       k1               1.16049                 k1                1.19493    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               7.17824                 k3                6.05525    
+       k4               8.58083                 k4                8.64149    
+       k5               47.7013                 k5                27.3191    
+       k6               1.56545                 k6                1.64876    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               21.2319                 k8                19.8970    
+       k9               1.25004                 k9               0.113640    
+       k10             1.000000E-03             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              45.8272                 k13               36.0011    
+       k14              1.47952                 k14               1.33100    
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                38.5528                 c                 41.3578    
+       c2               55.2999                 c2                55.8061    
+    Maximum relative change:  10.00     ["k9"]
+
+
+ OPTIMISATION ITERATION NO.        : 28
+    Model calls so far             : 1099
+    Current regularisation weight factor                     :  5.05792E-03
+    Current value of measurement objective function          :   549.22    
+    Current value of regularisation objective function       :  5.30006E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   562.78    
+    Contribution to phi from observation group "head"        :   549.22    
+    Contribution to phi from observation group "regul_c"     :  1.37159E-02
+    Contribution to phi from observation group "regul_c2"    :   13.439    
+    Contribution to phi from observation group "regul_k"     :  0.10587    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   54.922    
+ 
+    Re-calculated regularisation weight factor               :  2.30219E-03
+    New starting objective function for this itn. (ie. phi)  :   552.03    
+    Contribution to phi from observation group "head"        :   549.22    
+    Contribution to phi from observation group "regul_c"     :  2.84161E-03
+    Contribution to phi from observation group "regul_c2"    :   2.7843    
+    Contribution to phi from observation group "regul_k"     :  2.19328E-02
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   551.06      (  0.998 of starting phi)
+     Meas. fn. =   548.24    
+    Regul. fn. =  5.31269E+05
+
+        Lambda =  1.05822E-11 upgrade fraction =   1.0000     ----->
+           Phi =   551.06      (  0.998 of starting phi)
+     Meas. fn. =   548.24    
+    Regul. fn. =  5.31269E+05
+
+        Lambda =  1.36924E-05 upgrade fraction =   1.0000     ----->
+           Phi =   551.06      (  0.998 of starting phi)
+     Meas. fn. =   548.24    
+    Regul. fn. =  5.31269E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.20373E-08 upgrade fraction =   1.0000     ----->
+           Phi =   551.56      (  0.999 of starting phi)
+     Meas. fn. =   548.75    
+    Regul. fn. =  5.30563E+05
+
+        Lambda =  1.05822E-11 upgrade fraction =   1.0000     ----->
+           Phi =   551.56      (  0.999 of starting phi)
+     Meas. fn. =   548.75    
+    Regul. fn. =  5.30563E+05
+
+        Lambda =  1.36924E-05 upgrade fraction =   1.0000     ----->
+           Phi =   551.56      (  0.999 of starting phi)
+     Meas. fn. =   548.75    
+    Regul. fn. =  5.30563E+05
+
+       Current parameter values                 Previous parameter values
+       k1               1.16003                 k1                1.16049    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               7.18320                 k3                7.17824    
+       k4               8.58077                 k4                8.58083    
+       k5               47.7340                 k5                47.7013    
+       k6               1.56421                 k6                1.56545    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               21.2344                 k8                21.2319    
+       k9               1.25241                 k9                1.25004    
+       k10             1.100000E-02             k10              1.000000E-03
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              45.8480                 k13               45.8272    
+       k14              1.47733                 k14               1.47952    
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                38.4956                 c                 38.5528    
+       c2               55.3522                 c2                55.2999    
+    Maximum relative change:  10.00     ["k10"]
+
+
+ OPTIMISATION ITERATION NO.        : 29
+    Model calls so far             : 1141
+    Current regularisation weight factor                     :  2.30219E-03
+    Current value of measurement objective function          :   548.24    
+    Current value of regularisation objective function       :  5.31269E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   551.06    
+    Contribution to phi from observation group "head"        :   548.24    
+    Contribution to phi from observation group "regul_c"     :  3.07081E-03
+    Contribution to phi from observation group "regul_c2"    :   2.7907    
+    Contribution to phi from observation group "regul_k"     :  2.19579E-02
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   54.824    
+ 
+    Re-calculated regularisation weight factor               :  1.39967E-02
+    New starting objective function for this itn. (ie. phi)  :   652.32    
+    Contribution to phi from observation group "head"        :   548.24    
+    Contribution to phi from observation group "regul_c"     :  0.11351    
+    Contribution to phi from observation group "regul_c2"    :   103.16    
+    Contribution to phi from observation group "regul_k"     :  0.81164    
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.05822E-11 upgrade fraction =   1.0000     ----->
+           Phi =   651.87      (  0.999 of starting phi)
+     Meas. fn. =   547.87    
+    Regul. fn. =  5.30865E+05
+
+        Lambda =  1.76852E-13 upgrade fraction =   1.0000     ----->
+           Phi =   651.87      (  0.999 of starting phi)
+     Meas. fn. =   547.87    
+    Regul. fn. =  5.30865E+05
+
+        Lambda =  1.25580E-07 upgrade fraction =   1.0000     ----->
+           Phi =   651.87      (  0.999 of starting phi)
+     Meas. fn. =   547.87    
+    Regul. fn. =  5.30865E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.05822E-11 upgrade fraction =   1.0000     ----->
+           Phi =   652.00      (  1.000 of starting phi)
+     Meas. fn. =   547.97    
+    Regul. fn. =  5.31004E+05
+
+        Lambda =  1.76852E-13 upgrade fraction =   1.0000     ----->
+           Phi =   652.00      (  1.000 of starting phi)
+     Meas. fn. =   547.97    
+    Regul. fn. =  5.31004E+05
+
+        Lambda =  1.25580E-07 upgrade fraction =   1.0000     ----->
+           Phi =   652.00      (  1.000 of starting phi)
+     Meas. fn. =   547.97    
+    Regul. fn. =  5.31004E+05
+
+       Current parameter values                 Previous parameter values
+       k1               1.16009                 k1                1.16003    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               7.19037                 k3                7.18320    
+       k4               8.58141                 k4                8.58077    
+       k5               47.8520                 k5                47.7340    
+       k6               1.56383                 k6                1.56421    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               21.2388                 k8                21.2344    
+       k9               1.26541                 k9                1.25241    
+       k10             0.121000                 k10              1.100000E-02
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              45.9390                 k13               45.8480    
+       k14              1.46076                 k14               1.47733    
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                38.4939                 c                 38.4956    
+       c2               55.3340                 c2                55.3522    
+    Maximum relative change:  10.00     ["k10"]
+
+
+ OPTIMISATION ITERATION NO.        : 30
+    Model calls so far             : 1183
+    Current regularisation weight factor                     :  1.39967E-02
+    Current value of measurement objective function          :   547.87    
+    Current value of regularisation objective function       :  5.30865E+05
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+ 
+    Starting phi for this iteration                          :   651.87    
+    Contribution to phi from observation group "head"        :   547.87    
+    Contribution to phi from observation group "regul_c"     :  0.11376    
+    Contribution to phi from observation group "regul_c2"    :   103.07    
+    Contribution to phi from observation group "regul_k"     :  0.81521    
+    All frozen parameters freed.
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_c         1.00000    
+     regul_c2        1.00000    
+     regul_k         1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   54.787    
+ 
+    Re-calculated regularisation weight factor               :  8.28210E-03
+    New starting objective function for this itn. (ie. phi)  :   584.29    
+    Contribution to phi from observation group "head"        :   547.87    
+    Contribution to phi from observation group "regul_c"     :  3.98310E-02
+    Contribution to phi from observation group "regul_c2"    :   36.088    
+    Contribution to phi from observation group "regul_k"     :  0.28543    
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.76733E-13 upgrade fraction =   1.0000     ----->
+           Phi =   581.58      (  0.995 of starting phi)
+     Meas. fn. =   545.33    
+    Regul. fn. =  5.28430E+05
+
+        Lambda =  8.20323E-09 upgrade fraction =   1.0000     ----->
+           Phi =   581.58      (  0.995 of starting phi)
+     Meas. fn. =   545.33    
+    Regul. fn. =  5.28430E+05
+
+        Lambda =  3.80760E-04 upgrade fraction =   1.0000     ----->
+           Phi =   581.58      (  0.995 of starting phi)
+     Meas. fn. =   545.33    
+    Regul. fn. =  5.28430E+05
+
+    Undertaking Broyden's update of Jacobian matrix...
+    - Jacobian update performed 3 times.
+    - all frozen parameters freed
+        param "k7" frozen: gradient and update vectors out of bounds
+        param "k15" frozen: gradient and update vectors out of bounds
+        param "k16" frozen: gradient and update vectors out of bounds
+        param "k11" frozen: gradient and update vectors out of bounds
+        param "k12" frozen: gradient and update vectors out of bounds
+        param "k2" frozen: gradient and update vectors out of bounds
+
+        Lambda =  1.76733E-13 upgrade fraction =   1.0000     ----->
+           Phi =   582.01      (  0.996 of starting phi)
+     Meas. fn. =   545.71    
+    Regul. fn. =  5.29255E+05
+
+        Lambda =  8.20323E-09 upgrade fraction =   1.0000     ----->
+           Phi =   582.01      (  0.996 of starting phi)
+     Meas. fn. =   545.71    
+    Regul. fn. =  5.29255E+05
+
+        Lambda =  3.80760E-04 upgrade fraction =   1.0000     ----->
+           Phi =   582.01      (  0.996 of starting phi)
+     Meas. fn. =   545.70    
+    Regul. fn. =  5.29255E+05
+
+       Current parameter values                 Previous parameter values
+       k1               1.16119                 k1                1.16009    
+       k2              1.000000E-03             k2               1.000000E-03
+       k3               7.23428                 k3                7.19037    
+       k4               8.63841                 k4                8.58141    
+       k5               48.4307                 k5                47.8520    
+       k6               1.56135                 k6                1.56383    
+       k7              1.000000E-03             k7               1.000000E-03
+       k8               21.2907                 k8                21.2388    
+       k9               1.32708                 k9                1.26541    
+       k10              1.33100                 k10              0.121000    
+       k11             1.000000E-03             k11              1.000000E-03
+       k12             1.000000E-03             k12              1.000000E-03
+       k13              47.1872                 k13               45.9390    
+       k14              1.30463                 k14               1.46076    
+       k15             1.000000E-03             k15              1.000000E-03
+       k16             1.000000E-03             k16              1.000000E-03
+       c                38.4664                 c                 38.4939    
+       c2               55.2208                 c2                55.3340    
+    Maximum relative change:  10.00     ["k10"]
+
+    Optimisation complete: optimisation iteration limit of 30 realized.
+    Total model calls:   1225
+
+
+                             OPTIMISATION RESULTS
+
+ PEST_HP does not record parameter confidence intervals.
+ Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+ Use other PEST linear analysis utilities to explore parameter uncertainties and identifiabilities.
+
+
+ Parameters ----->
+
+ Parameter      Estimated value
+  k1              1.16119    
+  k2             1.000000E-03
+  k3              7.23428    
+  k4              8.63841    
+  k5              48.4307    
+  k6              1.56135    
+  k7             1.000000E-03
+  k8              21.2907    
+  k9              1.32708    
+  k10             1.33100    
+  k11            1.000000E-03
+  k12            1.000000E-03
+  k13             47.1872    
+  k14             1.30463    
+  k15            1.000000E-03
+  k16            1.000000E-03
+  c               38.4664    
+  c2              55.2208    
+
+ See file gondebeek_ss_drn_reg.sen for parameter sensitivities.
+ Note that these sensitivities include effects of regularisation observations.
+
+
+ Regularisation Weight Factor ----->
+
+ Optimised regularisation weight factor = 8.28210E-03
+
+ Pertinent observation and prior information weights shown below are 
+ calculated using  this weight factor.
+
+ Note that the target measurement objective function was not achieved.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ prefixaelm_1_1         26.5700        23.7795        2.79052        1.000      head        
+ prefixaelm_2_1         26.2900        23.6846        2.60544        1.000      head        
+ prefixaelm_3_1         26.7200        23.9626        2.75737        1.000      head        
+ prefixmel_1_1          16.4200        18.1674       -1.74739        1.000      head        
+ prefixmel_2_1          18.9100        18.6125       0.297470        1.000      head        
+ prefixmel_3_1          17.4000        18.4219       -1.02192        1.000      head        
+ prefixmel_4_1          16.4300        19.1724       -2.74238        1.000      head        
+ prefixmer_5_1          21.7000        20.3213        1.37867        1.000      head        
+ prefixmer_7_1          31.6800        31.5763       0.103651        1.000      head        
+ prefixmoort_1_1        19.8600        22.6437       -2.78374        1.000      head        
+ prefixmoort_2_1        19.8700        21.8215       -1.95148        1.000      head        
+ prefixmoort_3_1        20.7100        21.8279       -1.11785        1.000      head        
+ prefixmoort_4_1        20.9600        22.2281       -1.26812        1.000      head        
+ prefixmoort_5_1        21.0900        22.2281       -1.13812        1.000      head        
+ prefixmoort_6_1        20.4900        22.9313       -2.44134        1.000      head        
+ prefixmoort_7_1        20.7000        21.9694       -1.26944        1.000      head        
+ prefixmoort_8_1        19.2800        22.1540       -2.87399        1.000      head        
+ prefixntp_1_1          12.3700        13.2601      -0.890116        10.00      head        
+ prefixntp_2_1          12.1400        12.5557      -0.415736        10.00      head        
+ prefixntp_3_1          12.5400        13.4190      -0.879041        10.00      head        
+ prefixntp_4_1          12.1000        12.8694      -0.769398        10.00      head        
+ prefixntp_5_1          12.6200        13.8656       -1.24561        10.00      head        
+ prefixntp_6_1          12.2700        13.1137      -0.843725        10.00      head        
+ prefixoost_1_1         25.8200        26.1579      -0.337882        1.000      head        
+ prefixoost_16_1        13.3300        12.9096       0.420423        1.000      head        
+ prefixoost_17_1        13.1700        12.6916       0.478371        1.000      head        
+ prefixoost_2_1         42.8100        42.7963       1.371000E-02    1.000      head        
+ prefixoost_3_1         43.2400        45.5528       -2.31276        1.000      head        
+ prefixoost_4_1         55.6700        56.7301       -1.06006        1.000      head        
+ prefixoost_5_1         51.8100        48.6777        3.13225        1.000      head        
+ prefixoost_9_1         41.3200        39.9557        1.36427        1.000      head        
+
+
+ Prior information ----->
+
+ Prior                  Provided       Calculated     Residual       Weight     Group
+ information            value          value
+ k1                     1.00000        1.16119      -0.161194       8.2821E-03  regul_k     
+ k2                     1.00000       1.000000E-03   0.999000       8.2821E-03  regul_k     
+ k3                     1.00000        7.23428       -6.23428       8.2821E-03  regul_k     
+ k4                     5.00000        8.63841       -3.63841       8.2821E-03  regul_k     
+ k5                     6.00000        48.4307       -42.4307       8.2821E-03  regul_k     
+ k6                     1.00000        1.56135      -0.561352       8.2821E-03  regul_k     
+ k7                     1.50000       1.000000E-03    1.49900       8.2821E-03  regul_k     
+ k8                     6.00000        21.2907       -15.2907       8.2821E-03  regul_k     
+ k9                    0.100000        1.32708       -1.22708       8.2821E-03  regul_k     
+ k10                    1.00000        1.33100      -0.331000       8.2821E-03  regul_k     
+ k11                    1.50000       1.000000E-03    1.49900       8.2821E-03  regul_k     
+ k12                    2.70000       1.000000E-03    2.69900       8.2821E-03  regul_k     
+ k13                   0.100000        47.1872       -47.0872       8.2821E-03  regul_k     
+ k14                    1.00000        1.30463      -0.304629       8.2821E-03  regul_k     
+ k15                    1.50000       1.000000E-03    1.49900       8.2821E-03  regul_k     
+ k16                    2.70000       1.000000E-03    2.69900       8.2821E-03  regul_k     
+ c                      40.0000        38.4664        1.53360       0.1325      regul_c     
+ c2                     10.0000        55.2208       -45.2208       0.1325      regul_c2    
+
+ See file gondebeek_ss_drn_reg.res for more details of residuals in graph-ready format.
+
+ See file gondebeek_ss_drn_reg.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =   581.58    
+   Contribution to phi from observation group "head"         =   545.33    
+   Contribution to phi from observation group "regul_c"      =  4.12996E-02
+   Contribution to phi from observation group "regul_c2"     =   35.908    
+   Contribution to phi from observation group "regul_k"      =  0.29686    
+
+   Optimised measurement objective function                  =   545.33    
+   Optimised regularisation weight factor                    =  8.28210E-03
+   Optimised regularisation objective function               =  5.28430E+05
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   =  0.99860    
+   (Includes measurement observations only.)
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =    49
+      Mean value of non-zero weighted residuals                      =  -1.343    
+      Maximum weighted residual [observation "prefixoost_5_1"]       =   3.132    
+      Minimum weighted residual [observation "prefixntp_5_1"]        =  -12.46    
+      Standard variance of weighted residuals                        =   18.76    
+      Standard error of weighted residuals                           =   4.331    
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+   Residuals for observation group "head":-
+      Number of residuals with non-zero weight                       =    31
+      Mean value of non-zero weighted residuals                      =  -1.908    
+      Maximum weighted residual [observation "prefixoost_5_1"]       =   3.132    
+      Minimum weighted residual [observation "prefixntp_5_1"]        =  -12.46    
+      "Variance" of weighted residuals                               =   17.59    
+      "Standard error" of weighted residuals                         =   4.194    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_c":-
+      Number of residuals with non-zero weight                       =     1
+      Mean value of non-zero weighted residuals                      =  0.2032    
+      Maximum weighted residual [observation "c"]                    =  0.2032    
+      Minimum weighted residual [observation "c"]                    =  0.2032    
+      "Variance" of weighted residuals                               =  4.1300E-02
+      "Standard error" of weighted residuals                         =  0.2032    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_c2":-
+      Number of residuals with non-zero weight                       =     1
+      Mean value of non-zero weighted residuals                      =  -5.992    
+      Maximum weighted residual [observation "c2"]                   =  -5.992    
+      Minimum weighted residual [observation "c2"]                   =  -5.992    
+      "Variance" of weighted residuals                               =   35.91    
+      "Standard error" of weighted residuals                         =   5.992    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_k":-
+      Number of residuals with non-zero weight                       =    16
+      Mean value of non-zero weighted residuals                      = -5.5062E-02
+      Maximum weighted residual [observation "k12"]                  =  2.2353E-02
+      Minimum weighted residual [observation "k13"]                  = -0.3900    
+      "Variance" of weighted residuals                               =  1.8554E-02
+      "Standard error" of weighted residuals                         =  0.1362    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+
+ PEST_HP does not record parameter covariance and other matrices.
+ Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+ Use other PEST linear analysis utilities to explore parameter and predictive uncertainties.

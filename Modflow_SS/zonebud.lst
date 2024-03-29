@@ -3165,21 +3165,21 @@ Done reading records from budget file
            ---                                      ---
               STO-SS =           0.0000                STO-SS =           0.0000                                      
                  DRN =           0.0000                   DRN =           0.0000     DRN                              
-                 RIV =        8498.6523                   RIV =        8498.6523     RIV                              
+                 RIV =        3560.8284                   RIV =        3560.8284     RIV                              
                 RCHA =       28844.8936                  RCHA =       28844.8936     RCHA_0                           
 
-            TOTAL IN =       37343.5460              TOTAL IN =       37343.5460
+            TOTAL IN =       32405.7220              TOTAL IN =       32405.7220
 
           OUT:                                     OUT:
           ----                                     ----
               STO-SS =           0.0000                STO-SS =           0.0000                                      
-                 DRN =       29392.1568                   DRN =       29392.1568     DRN                              
-                 RIV =        7951.3352                   RIV =        7951.3352     RIV                              
+                 DRN =       11950.1033                   DRN =       11950.1033     DRN                              
+                 RIV =       20455.0850                   RIV =       20455.0850     RIV                              
                 RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
 
-           TOTAL OUT =       37343.4921             TOTAL OUT =       37343.4921
+           TOTAL OUT =       32405.1883             TOTAL OUT =       32405.1883
 
-            IN - OUT =       5.3888E-02              IN - OUT =       5.3888E-02
+            IN - OUT =           0.5337              IN - OUT =           0.5337
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 
