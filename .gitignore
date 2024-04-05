@@ -4,6 +4,15 @@
 /Modflow_SS_agent2/
 /Modflow_SS_PESTini_it2/
 /Modflow_SS_PESTini_it3/
+/Modflow_SS_it10/
+/Modflow_SS_it1/
+/Modflow_SS_it2/
+/Modflow_SS_it3/
+/Modflow_SS_it4/
+/Modflow_SS_it5/
+/Modflow_SS_it6/
+/Modflow_SS_it7/
+/Modflow_SS_it9/
 Clonador_ejecutador_revB.bat
 *.exe
 *.hds
