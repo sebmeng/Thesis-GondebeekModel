@@ -1,0 +1,14 @@
+  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
+      1  idle       90         90         0          0            0.354000        5.40200       0.528444        47.5600        54.0790       0.879454     172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent1
+      2  idle       68         67         0          1            0.356000        5.40600       0.571956        38.8930        49.4830       0.785987     172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent2
+ 
+ Note.
+
+ Model runs can be abandoned for three reasons:-
+   (a) for completion by another agent during derivatives calculation;
+   (b) to prevent possible model convergence failure from stalling inversion progress during parameter upgrades;
+   (c) user-termination of execution while a model run is in progress.
+ 
+ Times undertaking abandoned model runs are included in the above efficiency statistics.
+ "Efficiency" should therefore be interpreted in terms of preventing agent idleness rather than
+ model-run parsimony of the inversion process.

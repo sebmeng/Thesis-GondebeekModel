@@ -11,6 +11,5 @@ BEGIN packages
   sto6  Gondebeek_SS.sto  sto
   rch6  Gondebeek_SS.rcha  rcha_0
   riv6  Gondebeek_SS.riv  riv
-  drn6  Gondebeek_SS.drn  drn
 END packages
 

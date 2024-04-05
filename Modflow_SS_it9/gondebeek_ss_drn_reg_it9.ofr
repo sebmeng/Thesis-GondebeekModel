@@ -2,4 +2,4 @@
  (Regularisation groups are excluded as they are weight-factor dependent.)
  
  iteration    measurement         regularisation      head           
-   0           545.329             6375.10             545.329      
+   0           100.581             35589.3             100.581      
