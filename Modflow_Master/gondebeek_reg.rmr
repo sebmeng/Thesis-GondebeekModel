@@ -1,0 +1,15 @@
+                 RUN MANAGEMENT RECORD: CASE gondebeek_reg
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ 
+ ******************************************************************************
+ Error condition prevents continued PEST_HP execution:-
+
+ Parameter `kx1` not cited in PEST control file: line 2 of template file 
+ zones_layer1.tpl.
+ ******************************************************************************

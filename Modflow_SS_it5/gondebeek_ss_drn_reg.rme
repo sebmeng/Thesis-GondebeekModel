@@ -1,3 +1,0 @@
-  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
-      1  idle       889        889        0          0            0.360000        1.26700       0.416466        370.238        372.149       0.994865     172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent1
-      2  lost       0          --         --         --              --             --             --             --           1.32400          --        172.27.80.1\\C:\Users\sebas\Documents\UGent\Sem 3\Thesis\GondebeekModel\Modflow_SS_agent2

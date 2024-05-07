@@ -1,0 +1,11 @@
+                    PEST RUN RECORD: CASE gondebeek_reg
+
+
+ PEST_HP version: 17.1
+ 
+ ******************************************************************************
+ Error condition prevents continued PEST_HP execution:-
+
+ Parameter `kx1` not cited in PEST control file: line 2 of template file 
+ zones_layer1.tpl.
+ ******************************************************************************
